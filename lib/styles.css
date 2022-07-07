@@ -1,5 +1,59 @@
+
+
 .section__title{
     font-family: Playfair Display,serif;
     font-size: 39px;
     color: #505155;
+}
+.section__padding{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+.section__subtitle{
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .03em;
+    color: #6f7380;
+    text-transform: uppercase; 
+}
+.section__subtitle__dash{
+    color: rgb(238,46,20);
+}
+
+/* Section - About Norway */
+.section__about-norway__grid{
+    display: flex;
+}
+.section__about-norway__grid > *{
+    padding: 0 15px;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+}
+.section__about-norway article img{
+    width: 100%;
+}
+.section__about-norway__text{
+    margin-top: 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    color: #505155;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .section__subtitle{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .section__subtitle{
+        font-size: 12px;
+    }
 }
