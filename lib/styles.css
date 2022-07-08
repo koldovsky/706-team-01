@@ -28,7 +28,7 @@ body {
     text-transform: uppercase;
 }
 
-.section__subtitle__dash {
+.section__subtitle-dash {
     color: rgb(238, 46, 20);
 }
 
@@ -38,21 +38,21 @@ body {
     }
 
     /* Section - About Norway */
-    body .section__about-norway__grid {
+    body .section__about-norway-grid {
         padding-top: 105px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .section__padding {
+    .container {
         padding: 0 24px;
     }
 
     /* Section - About Norway */
-    body .section__about-norway__grid {
+    body .section__about-norway-grid {
         padding-top: 90px;
     }
-    body .section__about-norway__grid>* {
+    body .section__about-norway-grid>* {
         max-width: 100%;
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
