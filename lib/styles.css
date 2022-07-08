@@ -62,35 +62,3 @@ body {
     /* Section - About Norway */
 }
 
-/* Section - FAQ */
-.section__faq {
-    background-color: rgb(35, 36, 40);
-    color: rgba(255, 255, 255);
-    font-family: Roboto, sans-serif;
-    display: flex;
-}
-
-.section__faq-info-explanation {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.accordion__container-text {
-    color: rgba(169, 169, 169);
-}
-
-.title__marked-part {
-    color: rgb(80, 81, 85);
-}
-
-.subtitle__dash {
-    color: rgb(238, 46, 20);
-}
-
-.section__faq-info-title {
-    font-family: Playfair Display, serif;
-}
-
-.section__faq-info-subtitle {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: Roboto, sans-serif;
-}
