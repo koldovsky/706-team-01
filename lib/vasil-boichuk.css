@@ -1,22 +1,27 @@
 /* Section - About Norway */
-.section__about-norway__grid{
+
+.section__about-norway__grid {
     display: flex;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
-.section__about-norway__grid > *{
+
+.section__about-norway__grid>* {
     padding: 0 15px;
-    max-width: 100%;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    max-width: 33.33333%;
+    -webkit-flex-basis: 33.33333%;
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
 }
-.section__about-norway article img{
+
+.section__about-norway__grid img {
     width: 100%;
 }
-.section__about-norway__text{
+
+.section__about-norway__text {
     margin-top: 25px;
     font-family: Roboto, sans-serif;
     font-size: 19px;
     color: #505155;
     line-height: 1.7;
 }
-

@@ -36,20 +36,29 @@ body {
     .section__subtitle {
         font-size: 12px;
     }
+
+    /* Section - About Norway */
+    body .section__about-norway__grid {
+        padding-top: 105px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .section__padding {
         padding: 0 24px;
     }
 
     /* Section - About Norway */
-    body .section__about-norway__grid>* {
-        max-width: 33.33333%;
-        -webkit-flex-basis: 33.33333%;
-        -ms-flex-preferred-size: 33.33333%;
-        flex-basis: 33.33333%;
+    body .section__about-norway__grid {
+        padding-top: 90px;
     }
+    body .section__about-norway__grid>* {
+        max-width: 100%;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
     /* Section - About Norway */
 }
 
