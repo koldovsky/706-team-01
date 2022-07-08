@@ -51,6 +51,7 @@ body {
     /* Section - About Norway */
     body .section__about-norway-grid {
         padding-top: 90px;
+        flex-direction: column;
     }
     body .section__about-norway-grid>* {
         max-width: 100%;
