@@ -9,7 +9,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 24px;
     box-sizing: border-box;
 }
 .section__subtitle{
@@ -27,35 +27,23 @@
     color: rgb(238,46,20);
 }
 
-/* Section - About Norway */
-.section__about-norway__grid{
-    display: flex;
-}
-.section__about-norway__grid > *{
-    padding: 0 15px;
-    max-width: 33.33333%;
-    flex-basis: 33.33333%;
-}
-.section__about-norway article img{
-    width: 100%;
-}
-.section__about-norway__text{
-    margin-top: 25px;
-    font-family: Roboto, sans-serif;
-    font-size: 19px;
-    color: #505155;
-    line-height: 1.7;
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .section__subtitle{
         font-size: 12px;
     }
 }
-@media screen and (max-width: 767px) {
-    .section__subtitle{
-        font-size: 12px;
+@media screen and (min-width: 768px) {
+    .section__padding{
+        padding: 0 32px;
     }
+    /* Section - About Norway */
+    .section__about-norway__grid > *{
+        max-width: 33.33333%;
+        -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    }
+    /* Section - About Norway */
 }
 
 /* Section - FAQ */
