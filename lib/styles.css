@@ -1,18 +1,20 @@
 
-
-.section__title{
+body {
+    min-width: 320px;
+}
+.section__title {
     font-family: Playfair Display,serif;
     font-size: 39px;
     color: #505155;
 }
-.section__padding{
+.section__padding {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
     box-sizing: border-box;
 }
-.section__subtitle{
+.section__subtitle {
     font-size: 13px;
     line-height: 1.6;
     font-family: Roboto,sans-serif;
@@ -32,9 +34,9 @@
         font-size: 12px;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .section__padding{
-        padding: 0 32px;
+        padding: 0 24px;
     }
     /* Section - About Norway */
     .section__about-norway__grid > *{
