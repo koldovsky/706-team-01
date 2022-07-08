@@ -33,8 +33,10 @@
 }
 .section__about-norway__grid > *{
     padding: 0 15px;
-    max-width: 33.33333%;
-    flex-basis: 33.33333%;
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
 }
 .section__about-norway article img{
     width: 100%;
@@ -55,6 +57,14 @@
 @media screen and (max-width: 767px) {
     .section__subtitle{
         font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .section__about-norway__grid > *{
+        max-width: 33.33333%;
+        -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
     }
 }
 
