@@ -1,12 +1,12 @@
 /* Section - About Norway */
 
-.section__about-norway__grid {
+.section__about-norway-grid {
     display: flex;
     padding-top: 120px;
     padding-bottom: 60px;
 }
 
-.section__about-norway__grid>* {
+.section__about-norway-grid>* {
     padding: 0 15px;
     max-width: 33.33333%;
     -webkit-flex-basis: 33.33333%;
@@ -14,11 +14,11 @@
     flex-basis: 33.33333%;
 }
 
-.section__about-norway__grid img {
+.section__about-norway-grid img {
     width: 100%;
 }
 
-.section__about-norway__text {
+.section__about-norway-text {
     margin-top: 25px;
     font-family: Roboto, sans-serif;
     font-size: 19px;

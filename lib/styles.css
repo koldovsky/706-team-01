@@ -2,18 +2,18 @@ body {
     min-width: 320px;
 }
 
-.section__title {
-    font-family: Playfair Display, serif;
-    font-size: 39px;
-    color: #505155;
-}
-
-.section__padding {
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px;
     box-sizing: border-box;
+}
+
+.section__title {
+    font-family: Playfair Display, serif;
+    font-size: 39px;
+    color: #505155;
 }
 
 .section__subtitle {
