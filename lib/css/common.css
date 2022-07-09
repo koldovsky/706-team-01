@@ -11,14 +11,21 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
-    --text-color: #505155;
+    --text-color: rgb(80, 81, 85);
     --border-color: #ccc;
     --ui-brand-color: #f5a623;
+    --dash-color: rgb(238, 46, 20);
+    --subtitle-light-color: rgba(255, 255, 255, 0.6);
+    --subtitle-dark-color: rgb(111, 115, 128);
+    --text-white-color: rgba(255, 255, 255);
+    --background-dark-color: rgb(35, 36, 40);
+    --text-accordion-color: rgba(169, 169, 169);
 }
 
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 body {
@@ -36,7 +43,7 @@ body {
 .section__title {
     font-family: Playfair Display, serif;
     font-size: 39px;
-    color: #505155;
+    color: var(--text-color);
 }
 
 .section__subtitle {
@@ -47,12 +54,12 @@ body {
     text-decoration: none;
     font-style: normal;
     letter-spacing: .03em;
-    color: #6f7380;
+    color: var(--subtitle-dark-color);
     text-transform: uppercase;
 }
 
 .section__subtitle-dash {
-    color: rgb(238, 46, 20);
+    color: var(--dash-color);
 }
 
 

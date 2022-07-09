@@ -1,7 +1,7 @@
 /* Section - FAQ */
 .section__faq {
-    background-color: rgb(35, 36, 40);
-    color: rgba(255, 255, 255);
+    background-color: var(--background-dark-color);
+    color: var(--text-white-color);
     font-family: Roboto, sans-serif;
     display: flex;
     margin: 0;
@@ -9,15 +9,8 @@
     padding-bottom: 130px;
 }
 
-.section__faq-info-subtitle {
-    font-size: 13px;
-    line-height: 1.6;
-    font-weight: 500;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: .03em;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: Roboto, sans-serif;
+p.section__faq-info-subtitle {
+    color: var(--subtitle-light-color); 
 }
 .section__faq-info, .section__faq-photo {
     padding: 0 auto;
@@ -30,13 +23,13 @@
 }
 
 .title__marked-part {
-    color: rgb(80, 81, 85);
+    color: var(--text-color);
 }
 
 .section__faq-info-explanation {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--subtitle-light-color);
 }
 
 .accordion__container-text {
-    color: rgba(169, 169, 169);
+    color: var(--text-accordion-color);
 }
