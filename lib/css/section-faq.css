@@ -2,11 +2,15 @@
 .section__faq {
     background-color: var(--background-dark-color);
     color: var(--text-white-color);
-    font-family: Roboto, sans-serif;
-    display: flex;
     margin: 0;
     padding-top: 60px;
     padding-bottom: 130px;
+    
+}
+
+.section__faq > .container {
+    display: flex;
+    height: 614px;
 }
 
 p.section__faq-info-subtitle {
