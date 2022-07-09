@@ -1,8 +1,3 @@
-@import 'font.css';
-@import 'controls.css';
-@import 'about-norway.css';
-@import 'section-faq.css';
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +15,7 @@
     --text-white-color: rgba(255, 255, 255);
     --background-dark-color: rgb(35, 36, 40);
     --text-accordion-color: rgba(169, 169, 169);
+    --description--white: rgba(255, 255, 255, 0.6);
 }
 
 img {
@@ -40,28 +36,9 @@ body {
     box-sizing: border-box;
 }
 
-.section__title {
-    font-family: Playfair Display, serif;
-    font-size: 39px;
-    color: var(--text-color);
-}
-
-.section__subtitle {
-    font-size: 13px;
-    line-height: 1.6;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: .03em;
-    color: var(--subtitle-dark-color);
-    text-transform: uppercase;
-}
-
 .section__subtitle-dash {
     color: var(--dash-color);
 }
-
 
 @media screen and (max-width: 991px) {
     .section__subtitle {
