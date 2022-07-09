@@ -1,5 +1,7 @@
 @import 'font.css';
 @import 'controls.css';
+@import 'about-norway.css';
+@import 'section-faq.css';
 
 * {
     margin: 0;
@@ -9,7 +11,7 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
-    --text-color:  #505155;
+    --text-color: #505155;
     --border-color: #ccc;
     --ui-brand-color: #f5a623;
 }
@@ -19,3 +21,49 @@ img {
     width: 100%;
 }
 
+body {
+    min-width: 320px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.section__title {
+    font-family: Playfair Display, serif;
+    font-size: 39px;
+    color: #505155;
+}
+
+.section__subtitle {
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .03em;
+    color: #6f7380;
+    text-transform: uppercase;
+}
+
+.section__subtitle-dash {
+    color: rgb(238, 46, 20);
+}
+
+
+@media screen and (max-width: 991px) {
+    .section__subtitle {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 24px;
+    }
+}
