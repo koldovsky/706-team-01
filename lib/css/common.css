@@ -16,6 +16,7 @@
     --background-dark-color: rgb(35, 36, 40);
     --text-accordion-color: rgba(169, 169, 169);
     --description-white: rgba(255, 255, 255, 0.6);
+    --title-dash: rgb(238, 46, 20);
 }
 
 img {
