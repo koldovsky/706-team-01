@@ -1,0 +1,7 @@
+/* Section - Stunning spots*/
+.section__stunning-spots {
+    background-color: var(--background-dark-color)
+}
+.section__subtitle-dash {
+    color: var(--dash-color: rgb(238, 46, 20););
+}
