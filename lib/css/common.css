@@ -9,13 +9,13 @@
     --text-color: rgb(80, 81, 85);
     --border-color: #ccc;
     --ui-brand-color: #f5a623;
-    --dash-color: rgb(238, 46, 20);
     --subtitle-light-color: rgba(255, 255, 255, 0.6);
     --subtitle-dark-color: rgb(111, 115, 128);
     --text-white-color: rgba(255, 255, 255);
     --background-dark-color: rgb(35, 36, 40);
     --text-accordion-color: rgba(169, 169, 169);
-    --description-white: rgba(255, 255, 255, 0.6);
+    --description-light: rgba(255, 255, 255, 0.6);
+    --description-dark: #505155;
     --title-dash: rgb(238, 46, 20);
 }
 
@@ -33,10 +33,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-.section__subtitle-dash {
-    color: var(--dash-color);
 }
 
 @media screen and (max-width: 991px) {

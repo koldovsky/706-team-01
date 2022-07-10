@@ -18,7 +18,7 @@
 }
 
 .subtitle {
-    font-family: Playfair Display,serif;
+    font-family: Playfair Display, serif;
     font-size: 45px;
     font-weight: 700;
     font-style: normal;
@@ -26,15 +26,17 @@
     text-transform: none;
 }
 
-.description-black {
-    font-size: 19px;
+.description {
     font-weight: 400;
     text-transform: none;
 }
 
-.description-white {
+.description_light {
     font-size: 17px;
-    font-weight: 400;
-    text-transform: none;
-    color: var(--description-white);
+    color: var(--description-light);
+}
+
+.description_dark {
+    font-size: 19px;
+    color: var(--description-dark);
 }
