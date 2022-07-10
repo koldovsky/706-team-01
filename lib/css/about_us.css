@@ -1,0 +1,39 @@
+.about-us__subtitle-brand-color {
+    color: blue;
+}
+
+.about-us__bottom-section {
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.about-us__bottom-section-item {
+    background-color: white;
+    color: black;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+}
+
+.bout-us__bottom-section-item-image {
+    background-color: white;
+    width: 10px;
+}
+
+.about-us__bottom-section-item-title {
+    text-align: left;
+}
+
+.description description_dark-section_info {
+    font-size: 15px;
+    color: var(--description-dark);
+    background-color: white;
+    color: black;
+}
