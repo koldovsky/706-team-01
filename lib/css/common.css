@@ -27,18 +27,12 @@ img {
 
 body {
     min-width: 320px;
+    overflow-x: hidden;
+    color: var(--text-color);
 }
 
 a {
     text-decoration: none;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-    box-sizing: border-box;
 }
 
 .section__subtitle-dash {
