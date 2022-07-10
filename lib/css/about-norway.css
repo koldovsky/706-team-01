@@ -6,7 +6,7 @@
     padding-bottom: 60px;
 }
 
-.about-norway__grid>* {
+.about-norway__grid-item {
     padding: 0 15px;
     max-width: 33.33333%;
     -webkit-flex-basis: 33.33333%;
@@ -14,11 +14,7 @@
     flex-basis: 33.33333%;
 }
 
-.about-norway__grid img {
-    width: 100%;
-}
-
-.about-norway__text {
+.about-norway__description {
     margin-top: 25px;
     font-size: 19px;
     color: #505155;
@@ -36,7 +32,7 @@
         padding-top: 90px;
         flex-direction: column;
     }
-    .about-norway__grid>* {
+    .about-norway__grid-item {
         max-width: 100%;
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
