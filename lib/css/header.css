@@ -1,3 +1,8 @@
 .header {
+    min-height: 1040px;
     background: url(../../imgs/background-header.png) no-repeat center center;
+}
+
+.header__wrapper {
+    min-height: 95px;
 }
