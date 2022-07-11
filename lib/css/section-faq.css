@@ -1,39 +1,35 @@
 /* Section - FAQ */
-.section__faq {
+.faq {
     background-color: var(--background-dark-color);
     color: var(--text-white-color);
     margin: 0;
     padding-top: 60px;
     padding-bottom: 130px;
-    
 }
 
-.section__faq > .container {
+.fag__container {
     display: flex;
     height: 614px;
+    justify-content: center;
 }
 
-p.section__faq-info-subtitle {
+.faq__title {
     color: var(--subtitle-light-color); 
 }
-.section__faq-info, .section__faq-photo {
+.faq__info, .faq__photo {
     padding: 0 auto;
     max-width: 45%;
     margin: 0 auto;
 }
 
-.section__faq-info-title {
-    font-family: Playfair Display, serif;
-}
-
-.title__marked-part {
+.faq__subtitle_marked-part {
     color: var(--text-color);
 }
 
-.section__faq-info-explanation {
+.faq__info-explanation {
     color: var(--subtitle-light-color);
 }
 
-.accordion__container-text {
+.faq-accordion__container-text {
     color: var(--text-accordion-color);
 }
