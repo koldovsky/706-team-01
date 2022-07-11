@@ -1,7 +1,11 @@
 /* Section - Stunning spots*/
-.section__stunning-spots {
-    background-color: var(--background-dark-color)
+.stunning-spots {
+    background-color: var(--background-dark-color);
+    color: var(--text-white-color);
 }
-.section__subtitle-dash {
+.title-dash {
     color: var(--dash-color);
+}
+.subtitle-accent {
+    color: var(--description-dark)
 }
