@@ -1,27 +1,27 @@
-.section__header-title{
+.places__header-title{
     color: var(--subtitle-dark-color);
     letter-spacing: 0.39px;
     line-height: 20.8px;
 }
 
-.section__header-subtitle{
-    color: var(--background-dark-color);
+.places__header-subtitle{
+    color: var(--text-color);
     letter-spacing: 1.35px;
     line-height: 54px;
 }
 
-.section__header-description{
+.places__header-description{
     line-height: 32.3px;
 }
 
-.section__cities-name{
+.places__cities-name{
     font-size: 17px;
     font-weight: 700;
     letter-spacing: 0.51px;
     line-height: 28.9px;
 }
 
-.city_subtitle{
+.places__city-subtitle{
     color: var(--subtitle-dark-color);
     font-size: 13px;
     font-weight: 500;
@@ -29,41 +29,41 @@
     line-height: 20.8px;
 }
 
-.city_title {
-    font-family: Playfair Display, serif;
+.places__city-title {
+    font-family: "Playfair Display", serif;
     font-size: 36px;
     line-height: 47.88px;
 }
 
-.duration{
+.places__city-stay-duration{
     font-size: 19px;
     font-weight: 700;
     line-height: 32.3px;
     color: var(--title-dash);
 }
 
-.hotel{
+.places__city-stay-hotel{
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.city_description{
+.places__city-description{
     font-size: 17px;
     font-weight: 400;
-    color: var(text-description-tab-color);
+    color: var(--text-description-tab-color);
     line-height: 28.9px;
     letter-spacing: 0.51px;
 
 }
 
-.details{
+.places__city-details{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.book_button{
+.places__city-book-button{
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
@@ -77,6 +77,6 @@
 
 
 
-section[class="section__places"] img{
+section[class="places"] img{
     width: 50px;
 }
