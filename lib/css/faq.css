@@ -1,4 +1,4 @@
-/* Section - FAQ */
+/* FAQ */
 .faq {
     background-color: var(--background-dark-color);
     color: var(--text-white-color);
@@ -8,16 +8,16 @@
 }
 
 .fag__container {
-    display: flex;
     height: 614px;
+    display: flex;
     justify-content: center;
 }
 
 .faq__title {
     color: var(--subtitle-light-color); 
 }
+
 .faq__info, .faq__photo {
-    padding: 0 auto;
     max-width: 45%;
     margin: 0 auto;
 }
