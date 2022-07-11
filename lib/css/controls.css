@@ -41,19 +41,19 @@
     color: var(--description-dark);
 }
 
-@media screen (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         padding: 0 32px;
     }
 }
 
-@media screen (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         padding: 0 40px;
     }
 }
 
-@media screen (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     .container {
         padding: 0 15px;
     }
