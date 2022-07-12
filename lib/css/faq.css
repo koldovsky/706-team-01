@@ -3,7 +3,7 @@
     background-color: var(--background-dark-color);
     color: var(--text-white-color);
     margin: 0;
-    padding: 60px 24px 90px 24px;
+    padding: 60px 0 90px 0;
 }
 
 .faq__container {
@@ -11,18 +11,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 15px;
     margin: 0;
+    padding: 0 15px;
 }
 
 .faq__info, .faq__photo-container {
     margin: 0;
-    padding: 5px 27px;  
-    min-width: 272px;
+    padding: 5px 27px; 
+    min-width: 272px; 
 }
 
 .faq__title {
-    display: block;
     color: var(--subtitle-light-color); 
 }
 
@@ -36,7 +35,6 @@
 }
 
 .faq__info-explanation {
-    display: block;
     margin-top: 25px;
     font-weight: 400;
     font-size: 19px;
@@ -46,7 +44,6 @@
 }
 
 .faq-accordion {
-    display: block;
     margin-top: 25px;
     font-size: 17px;
     font-weight: 400;
@@ -64,6 +61,7 @@
     border: none;
     outline: none;
     transition: 0.4s;
+    letter-spacing: .03em; 
     margin-top: 0;
     align-items: center;
 }
@@ -74,9 +72,10 @@
 
 .faq-accordion__container-title::before {
     content: '\02795'; /* Sign (+) */
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 400;
     float: left;
-    margin-right: 20px; 
+    margin-right: 20px;    
 }
 
 .faq-accordion__container-text {
@@ -91,7 +90,7 @@
 }
 
 @media (min-width: 768px) {
-    
+
     .faq__container {
         flex-direction: row;
         flex-wrap: nowrap;
