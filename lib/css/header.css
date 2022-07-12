@@ -181,4 +181,10 @@
     .header-button_underline:hover {
         text-decoration: underline;
     }
+
+    .main-nav {
+        display: flex;
+        min-width: 405px;
+        justify-content: space-between;
+    }
 }
