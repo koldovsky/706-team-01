@@ -1,5 +1,5 @@
 .header {
-    background: url(../../img/background-header.png) no-repeat center top;
+    background: url(../../img/header/background-header.png) no-repeat center top;
     color: var(--text-color-header);
 }
 
@@ -176,5 +176,9 @@
 
     .intro__text {
         margin: 0;
+    }
+
+    .header-button_underline:hover {
+        text-decoration: underline;
     }
 }
