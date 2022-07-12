@@ -1,5 +1,13 @@
 /* Section - About Norway */
 
+.about-norway__subtitle {
+    margin-bottom: 50px;
+}
+
+.about-norway__description {
+    margin-bottom: 25px;
+}
+
 .about-norway__grid {
     padding-top: 90px;
     padding-bottom: 35px;
@@ -18,15 +26,20 @@
 
 .about-norway__grid-item-image {
     margin-bottom: 50px;
-
 }
 
-.about-norway__subtitle {
-    margin-bottom: 50px;
+.about-norway__numbers-grid {
+    display: grid;
 }
 
-.about-norway__description {
-    margin-bottom: 25px;
+.about-norway__numbers-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--about-norway-numbers-color);
+}
+
+.about-norway__numbers-grid {
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
