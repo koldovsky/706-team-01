@@ -1,8 +1,70 @@
 .header {
-    min-height: 1040px;
-    background: url(../../img/background-header.png) no-repeat center center;
+    min-height: 885px;
+    background: url(../../img/background-header.png) no-repeat center top;
+    color: var(--text-color-header);
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header__wrapper {
-    min-height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+@media () {} 
+
+.header-banner {
+    padding: 90px 0;
+}
+
+.header-banner__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-main__link {
+    cursor: pointer;
+}
+
+.logo-main__image {
+    width: 188px;
+    height: auto;
+}
+
+.intro__title {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.intro__text {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro__video-details {
+    display: flex;
+}
+
+.video-details__link {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--text-color-header);
+}
+
+.main-nav {
+    display: none;
+}
+
+.next-trip__video-img {
+    width: 100%;
 }
