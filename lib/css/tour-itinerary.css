@@ -1,0 +1,42 @@
+.tour-itinerary {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: url(../../img/tour-itinerary/tour-itinerary-background.png) 48.13% 50% / cover no-repeat;
+}
+
+.tour-itinerary__inner {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.tour-itinerary__grid-item {
+    padding: 0 40px;
+}
+
+.tour-itinerary__grid-item:first-child {
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .tour-itinerary {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .tour-itinerary__grid {
+        display: flex;
+    }
+
+    .tour-itinerary__grid-item {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tour-itinerary {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

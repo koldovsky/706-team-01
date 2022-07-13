@@ -14,6 +14,10 @@
     color: var(--title-color);
 }
 
+.title-light { 
+    color: var(--title-light-color);
+}
+
 .title__dash {
     color: var(--title-dash);
     font-weight: bold;
@@ -26,6 +30,10 @@
     line-height: 1.2;
     letter-spacing: .03em;
     margin-top: 20px;
+}
+
+.subtitle__light {
+    color: var(--subtitle-light-color);
 }
 
 .description {
