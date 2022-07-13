@@ -21,10 +21,6 @@
     min-width: 272px; 
 }
 
-.faq__title {
-    color: var(--subtitle-light-color); 
-}
-
 .faq__subtitle-text {
     display: block;
     margin-top: 20px;
