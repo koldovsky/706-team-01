@@ -35,7 +35,7 @@
     font-size: 19px;
     line-height: 1.7;
     letter-spacing: normal;
-    color: var(--subtitle-light-color);
+    color: var(--description-light);
 }
 
 .faq-accordion {
@@ -91,17 +91,24 @@
 }
 
 @media (min-width: 768px) {
+    .faq {
+        padding-bottom: 110px;
+    }
 
     .faq__container {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: flex-start;
+        
     }
 
     .faq__info, .faq__photo-container {
-        padding: 0 15px;
-        max-width: 383px;
+        padding: 5px 28px; 
+    }
+
+    .faq__photo {
+        margin-top: 0;
     }
 }
 
