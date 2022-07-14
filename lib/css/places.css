@@ -1,20 +1,29 @@
+.places__container{
+    padding: 0 24px;
+}
+
 .places__header-title{
+    font-family: Roboto, sans-serif;
     color: var(--subtitle-dark-color);
     letter-spacing: 0.39px;
     line-height: 20.8px;
 }
 
 .places__header-subtitle{
+    font-family: "Playfair Display", sans-serif;
     color: var(--text-color);
     letter-spacing: 1.35px;
     line-height: 54px;
 }
 
 .places__header-description{
+    font-family: Roboto, sans-serif;
     line-height: 32.3px;
 }
 
 .places__cities-name{
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
     font-size: 17px;
     font-weight: 700;
     letter-spacing: 0.51px;
@@ -23,6 +32,7 @@
 
 .places__city-subtitle{
     color: var(--subtitle-dark-color);
+    font-family: Roboto, sans-serif;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.39px;
@@ -31,11 +41,13 @@
 
 .places__city-title {
     font-family: "Playfair Display", serif;
+    color: var(--text-color);
     font-size: 36px;
     line-height: 47.88px;
 }
 
 .places__city-stay-duration{
+    font-family: Roboto, sans-serif;
     font-size: 19px;
     font-weight: 700;
     line-height: 32.3px;
@@ -43,12 +55,15 @@
 }
 
 .places__city-stay-hotel{
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
 }
 
 .places__city-description{
+    font-family: Roboto, sans-serif;
     font-size: 17px;
     font-weight: 400;
     color: var(--text-description-tab-color);
@@ -58,12 +73,15 @@
 }
 
 .places__city-details{
+    font-family: Roboto, sans-serif;
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
 }
 
 .places__city-book-button{
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;

@@ -11,7 +11,7 @@
     color: var(--text-color);
     --bs-accordion-bg: #232428;
     --bs-body-color: #ffff;
-    --text-color: var(80, 81, 85);
+    --text-color: rgb(80, 81, 85);
     --border-color: #ccc;
     --ui-brand-color: #f5a623;
     --subtitle-light-color: rgb(255, 255, 255);
