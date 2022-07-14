@@ -16,8 +16,8 @@
 
 .faq__info, .faq__photo-container {
     margin: 0;
-    padding: 5px 27px; 
     min-width: 272px; 
+    padding: 5px 27px; 
 }
 
 .faq__subtitle {
@@ -26,36 +26,36 @@
 }
 
 .faq__info-explanation {
-    margin-top: 25px;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 1.7;
-    letter-spacing: normal;
     color: var(--description-light);
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.7;
+    margin-top: 25px;
 }
 
 .faq-accordion {
-    margin-top: 25px;
     font-size: 17px;
     font-weight: 400;
     line-height: 1.7;
+    margin-top: 25px;
 }
 
 .faq-accordion__container {
-    padding: 20px 0;
     border-bottom: 0.01px solid var(--text-accordion-color);
+    padding: 20px 0;
 }
 
 .faq-accordion__container-title {
-    width: 100%;
-    color: var(--title-accordion-color);
-    text-align: left;
+    align-items: center;
     border: none;
-    outline: none;
-    transition: 0.4s;
+    color: var(--title-accordion-color);
     letter-spacing: .03em; 
     margin-top: 0;
-    align-items: center;
+    outline: none;
+    text-align: left;
+    transition: 0.4s;
+    width: 100%;
 }
 
 .faq-accordion__container-title:hover {
@@ -64,16 +64,16 @@
 
 .faq-accordion__container-title::before {
     content: '\02795'; /* Sign (+) */
+    float: left;
     font-size: 17px;
     font-weight: 400;
-    float: left;
     margin-right: 20px;    
 }
 
 .faq-accordion__container-text {
     color: var(--text-accordion-color);
-    margin-top: 20px;
     font-size: 14px;
+    margin-top: 20px;
 }
 
 .faq__photo {
@@ -81,10 +81,10 @@
 }
 
 .faq__photo-man{
+    min-height: 344.4px;
     object-fit: cover;
     object-position: 39.903% 50%;
     width: 100%;
-    min-height: 344.4px;
 }
 
 @media (min-width: 768px) {
@@ -93,11 +93,10 @@
     }
 
     .faq__container {
+        align-items: flex-start;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        
+        justify-content: center; 
     }
 
     .faq__info, .faq__photo-container {
@@ -111,9 +110,9 @@
 
 @media (min-width: 992px) {
     .faq__info, .faq__photo-container {
-        width: 100%;
         height: 100%;
-        padding: 0 15px;
         max-width: 383px;
+        padding: 0 15px;
+        width: 100%;
     }
 }
