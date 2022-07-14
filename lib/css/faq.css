@@ -34,6 +34,11 @@
     margin-top: 25px;   
 }
 
+.accordion {
+    --bs-accordion-bg: #232428;
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+}
+
 .faq-accordion {
     font-size: 17px;
     font-weight: 400;
@@ -42,7 +47,7 @@
 }
 
 .faq-accordion__container {
-    border-bottom: 0.01px solid var(--text-accordion-color);
+    border-bottom: 0.001px solid var(--text-accordion-color);
     padding: 20px 0;
 }
 
@@ -62,18 +67,10 @@
     cursor: pointer;
 }
 
-.faq-accordion__container-title::before {
-    content: '\02795'; /* Sign (+) */
-    float: left;
-    font-size: 17px;
-    font-weight: 400;
-    margin-right: 20px;    
-}
-
 .faq-accordion__container-text {
     color: var(--text-accordion-color);
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .faq__photo {
