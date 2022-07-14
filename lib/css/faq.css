@@ -1,7 +1,7 @@
 /* FAQ */
 .faq {
     background-color: var(--background-dark-color);
-    color: var(--text-white-color);
+    color: var(--text-color);
     margin: 0;
     padding: 60px 0 90px 0;
 }
@@ -20,13 +20,9 @@
     min-width: 272px; 
 }
 
-.faq__subtitle-text {
+.faq__subtitle {
     display: block;
     margin-top: 20px;
-}
-
-.faq__subtitle_marked-part {
-    color: var(--text-color);
 }
 
 .faq__info-explanation {
@@ -52,6 +48,7 @@
 
 .faq-accordion__container-title {
     width: 100%;
+    color: var(--title-accordion-color);
     text-align: left;
     border: none;
     outline: none;
