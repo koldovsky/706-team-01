@@ -19,6 +19,22 @@
     display: none;
 }
 
+@media (min-width: 992px) {
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-nav__link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--main-nav);
+        margin-right: 15px;
+    }
+}
+
 .header-banner {
     display: flex;
     flex-direction: column;
@@ -111,9 +127,14 @@
     width: 120px;
     height: 34px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 28px;
     color: var(--header-button);
+}
+
+.header-button_border {
+    border: 2px solid var(--header-button);
+    text-align: center;
 }
 
 @media (min-width: 768px) {
