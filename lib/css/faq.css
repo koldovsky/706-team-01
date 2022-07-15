@@ -104,6 +104,30 @@ h3 {
     width: 100%;
 }
 
+@media (main-width: 400) {
+    .faq__photo-man {
+        min-height: 344.398px;
+    } 
+}
+
+@media (main-width: 500) {
+    .faq__photo-man {
+        min-height: 459.961px;
+    }
+}
+
+@media (main-width: 600) {
+    .faq__photo-man {
+        min-height: 575.531px;
+    } 
+}
+
+@media (main-width: 700) {
+    .faq__photo-man {
+        max-height: 691.102px;
+    } 
+}
+
 @media (min-width: 768px) {
     .faq {
         padding-bottom: 110px;
@@ -117,11 +141,15 @@ h3 {
     }
 
     .faq__info, .faq__photo {
-        padding: 5px 40px; 
+        padding: 5px 28px; 
+    }
+
+    .faq__info {
+        margin-right: 15px;
     }
 
     .faq__photo {
-        margin-top: 0;
+        margin: 0 0 0 15px;
     }
 
     .faq__photo-man {
@@ -129,11 +157,40 @@ h3 {
     }
 }
 
+@media (main-width: 850) {
+    .faq__photo-man {
+        min-height: 372.133px;
+    } 
+}
+
+@media (main-width: 900) {
+    .faq__photo-man {
+        min-height: 401.023px;
+    } 
+}
+
 @media (min-width: 992px) {
-    .faq__info, .faq__photo-container {
-        height: 100%;
-        max-width: 383px;
-        padding: 0 15px;
-        width: 100%;
+    .faq {
+        padding-bottom: 130px;
     }
+
+    .faq__info, .faq__photo {
+        padding: 5px 30px; 
+    }
+
+    .faq__photo-man {
+        min-height: 440.312px;
+    }
+}
+
+@media (main-width: 1050) {
+    .faq__photo-man {
+        min-height: 473.836px;
+    } 
+}
+
+@media (main-width: 1100) {
+    .faq__photo-man {
+        min-height: 502.722px;
+    } 
 }
