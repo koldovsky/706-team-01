@@ -2,10 +2,50 @@
 .stunning-spots {
     background-color: var(--background-dark-color);
     color: var(--text-white-color);
+    padding: 90px 0 90px 0;
 }
-.title-dash {
-    color: var(--dash-color);
-}
+
 .subtitle-accent {
-    color: var(--description-dark)
+    color: var(--description-dark);
+}
+
+.carousel-photos__slides {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1;
+    grid-gap: 20px;
+}
+
+.quote__content {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+}
+.image-slide {
+    width: 320px;
+    height: 320px;
+}
+
+@media (min-width: 320px) {
+    .carousel-photos__slides {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        width: 100%;
+}
+}
+@media (min-width: 760px) {
+    .carousel-photos__slides {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 15px;
+        width: 100%;
+}
+}
+@media (min-width: 900px) {
+    .carousel-photos__slides {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 15px;
+        width: 100%;
+}
 }
