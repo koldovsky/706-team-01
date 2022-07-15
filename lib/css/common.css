@@ -41,6 +41,8 @@ img {
 
 body {
     min-width: 320px;
+    font-family: 'Roboto', sans-serif; /* duplicate for bootstrap */
+    color: var(--text-color); /* duplicate for bootstrap */
 }
 
 a {
