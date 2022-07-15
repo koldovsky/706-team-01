@@ -104,25 +104,25 @@ h3 {
     width: 100%;
 }
 
-@media (main-width: 400) {
+@media (min-width: 400) {
     .faq__photo-man {
         min-height: 344.398px;
     } 
 }
 
-@media (main-width: 500) {
+@media (min-width: 500) {
     .faq__photo-man {
         min-height: 459.961px;
     }
 }
 
-@media (main-width: 600) {
+@media (min-width: 600) {
     .faq__photo-man {
         min-height: 575.531px;
     } 
 }
 
-@media (main-width: 700) {
+@media (min-width: 700) {
     .faq__photo-man {
         max-height: 691.102px;
     } 
@@ -157,13 +157,13 @@ h3 {
     }
 }
 
-@media (main-width: 850) {
+@media (min-width: 850) {
     .faq__photo-man {
         min-height: 372.133px;
     } 
 }
 
-@media (main-width: 900) {
+@media (min-width: 900) {
     .faq__photo-man {
         min-height: 401.023px;
     } 
@@ -183,13 +183,13 @@ h3 {
     }
 }
 
-@media (main-width: 1050) {
+@media (min-width: 1050) {
     .faq__photo-man {
         min-height: 473.836px;
     } 
 }
 
-@media (main-width: 1100) {
+@media (min-width: 1100) {
     .faq__photo-man {
         min-height: 502.722px;
     } 
