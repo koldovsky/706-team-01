@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="lib/css/index.css">
     <title>Norway</title>
 </head>
@@ -224,19 +225,20 @@
                     </p>
                 </header>
 
-                <div>
-                    <div class="places__cities-name">
-                        <p class="places__city-oslo">Oslo</p>
-                        <p class="places__city-trondheim">Trondheim</p>
-                        <p class="splaces__city-bode">Bodø</p>
-                        <p class="places__city-lofoten-islands">Lofoten Islands</p>
-                        <p class="places__city-tromse">Tromsø</p>
+                <div class="places__cities-container">
+                    <div class="places__cities">
+                        <p class="places__city-name">Oslo</p>
+                        <p class="places__city-name">Trondheim</p>
+                        <p class="places__city-name">Bodø</p>
+                        <p class="places__city-name">Lofoten Islands</p>
+                        <p class="places__city-name">Tromsø</p>
                     </div>
 
                     <div class="places__cities-description">
                         <article class="places__city-block oslo">
                             <div class="places__city-image-contaiter">
-                                <img src="img/places/oslo.jpeg" alt="People walking near the river in Oslo">
+                                <img src="img/places/oslo.jpeg" class="places__city-image"
+                                    alt="People walking near the river in Oslo">
                             </div>
                             <div class="places__city-main-info">
                                 <p class="places__city-subtitle">Oslo - First point</p>
@@ -252,26 +254,28 @@
                                     walking tour, you will see the opera house, parliament, the royal palace, and more.
                                 </p>
                                 <div class="places__city-details">
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/diner-icon.svg" alt="Image of cutlery" width="20">
-                                        - Dinner included
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/backpack-icon.svg" alt="Image of backpack" width="20">
-                                        - Leave your backpack in the hotel
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/plane-icon.svg" alt="Image of plane" width="20">
-                                        - Transfer from the airport
-                                    </p>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/diner-icon.svg" alt="Image of cutlery">
+                                        <p class="places__city-details-text">- Dinner included</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/backpack-icon.svg" alt="Image of backpack">
+                                        <p class="places__city-details-text">- Leave your backpack in the hotel</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/plane-icon.svg" alt="Image of plane">
+                                        <p class="places__city-details-text">- Transfer from the airport</p>
+                                    </div>
                                 </div>
-                                <p> <a class="places__city-book-button" href="#join_us">Book now → </a></p>
+                                <div class="places__city-button-container">
+                                    <a class="places__city-book-button" href="#join_us">Book now → </a>
+                                </div>
                             </div>
                         </article>
 
                         <article class="places__city-block trondheim">
                             <div class="places__city-image-contaiter">
-                                <img src="img/places/trondheim.jpeg"
+                                <img src="img/places/trondheim.jpeg" class="places__city-image"
                                     alt="The bridge over a river in a mountainous area where placed buildings">
                             </div>
                             <div class="places__city-main-info">
@@ -290,27 +294,28 @@
                                     revolving restaurant.
                                 </p>
                                 <div class="places__city-details">
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/bus-icon.svg" alt="Image of bus" width="20">
-                                        - Arriving at 9 a.m.
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/camera-icon.svg" alt="Image of camera" width="20">
-                                        - Instagram-friendly places
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/traffic-sign-icon.svg" alt="Image of traffic sign"
-                                            width="20">
-                                        - 3-hours walking tour
-                                    </p>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/bus-icon.svg" alt="Image of bus">
+                                        <p class="places__city-details-text">- Arriving at 9 a.m.</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/camera-icon.svg" alt="Image of camera">
+                                        <p class="places__city-details-text">- Instagram-friendly places</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/traffic-sign-icon.svg" alt="Image of traffic sign">
+                                        <p class="places__city-details-text">- 3-hours walking tour</p>
+                                    </div>
                                 </div>
-                                <p> <a class="places__city-book-button" href="#join_us">Book now →</a></p>
+                                <div class="places__city-button-container">
+                                    <a class="places__city-book-button" href="#join_us">Book now → </a>
+                                </div>
                             </div>
                         </article>
 
                         <article class="places__city-block bode">
                             <div class="places__city-image-contaiter">
-                                <img src="img/places/bode.jpeg"
+                                <img src="img/places/bode.jpeg" class="places__city-image"
                                     alt="Ships are sailing on a river in the mountains, which is located near the small town">
                             </div>
                             <div class="places__city-main-info">
@@ -326,26 +331,29 @@
                                     air, and try dishes with salmon and trout.
                                 </p>
                                 <div class="places__city-details">
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/map-icon.svg" alt="Image of map" width="20">
-                                        - Fishing spots
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/diner-icon.svg" alt="Image of cutlery" width="20">
-                                        - Fish dinner
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/cable-car-icon.svg" alt="Image of cable car" width="20">
-                                        - Cable car ride
-                                    </p>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/map-icon.svg" alt="Image of map">
+                                        <p class="places__city-details-text">- Fishing spots</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/diner-icon.svg" alt="Image of cutlery">
+                                        <p class="places__city-details-text">- Fish dinner</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/cable-car-icon.svg" alt="Image of cable car">
+                                        <p class="places__city-details-text">- Cable car ride</p>
+                                    </div>
                                 </div>
-                                <p> <a class="places__city-book-button" href="#join_us">Book now → </a></p>
+                                <div class="places__city-button-container">
+                                    <a class="places__city-book-button" href="#join_us">Book now → </a>
+                                </div>
                             </div>
                         </article>
 
                         <article class="places__city-block lofoten-islands">
                             <div class="places__city-image-contaiter">
-                                <img src="img/places/lofoten-islands.jpeg" alt="A lot of small islands in the ocean">
+                                <img src="img/places/lofoten-islands.jpeg" class="places__city-image"
+                                    alt="A lot of small islands in the ocean">
                             </div>
                             <div class="places__city-main-info">
                                 <p class="places__city-subtitle">Lofoten Islands - Fourth
@@ -362,28 +370,29 @@
                                     sandy beaches.
                                 </p>
                                 <div class="places__city-details">
-                                    <p class="places__city-details-paragraph">
+                                    <div class="places__city-details-container">
                                         <img src="img/places/sun-lounger-icon.svg"
-                                            alt="Image of a sun lounger and an umbrella" width="20">
-                                        - Unique beaches
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/bottle-icon.svg" alt="Image of bottle and glass"
-                                            width="20">
-                                        - Tasting of local liqueurs
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/boat-icon.svg" alt="Image of boat" width="20">
-                                        - Boat trip
-                                    </p>
+                                            alt="Image of a sun lounger and an umbrella">
+                                        <p class="places__city-details-text">- Unique beaches</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/bottle-icon.svg" alt="Image of bottle and glass">
+                                        <p class="places__city-details-text">- Tasting of local liqueurs</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/boat-icon.svg" alt="Image of boat">
+                                        <p class="places__city-details-text">- Boat trip</p>
+                                    </div>
                                 </div>
-                                <p> <a class="places__city-book-button" href="#join_us">Book now → </a></p>
+                                <div class="places__city-button-container">
+                                    <a class="places__city-book-button" href="#join_us">Book now → </a>
+                                </div>
                             </div>
                         </article>
 
                         <article class="places__city-block tromse">
                             <div class="places__city-image-contaiter">
-                                <img src="img/places/tromse.jpeg"
+                                <img src="img/places/tromse.jpeg" class="places__city-image"
                                     alt="The countryside and mountains under the Northern Lights">
                             </div>
                             <div class="places__city-main-info">
@@ -400,20 +409,22 @@
                                     Arctic Cathedral.
                                 </p>
                                 <div class="places__city-details">
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/bag-icon.svg" alt="Image of a bag" width="20">
-                                        - Free souvenirs
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/plane-icon.svg" alt="Image of plane" width="20">
-                                        - International airport
-                                    </p>
-                                    <p class="places__city-details-paragraph">
-                                        <img src="img/places/telescope-icon.svg" alt="Image of telescope" width="20">
-                                        - Northern Lights
-                                    </p>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/bag-icon.svg" alt="Image of a bag">
+                                        <p class="places__city-details-text">- Free souvenirs</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/plane-icon.svg" alt="Image of plane">
+                                        <p class="places__city-details-text">- International airport</p>
+                                    </div>
+                                    <div class="places__city-details-container">
+                                        <img src="img/places/telescope-icon.svg" alt="Image of telescope">
+                                        <p class="places__city-details-text">- Northern Lights</p>
+                                    </div>
                                 </div>
-                                <p> <a class="places__city-book-button" href="#join_us">Book now → </a></p>
+                                <div class="places__city-button-container">
+                                    <a class="places__city-book-button" href="#join_us">Book now → </a>
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -493,11 +504,14 @@
                     <div class="accordion accordion-flush faq-accordion" id="accordionFlushExample">
                         <div class="accordion-item faq-accordion__container">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
                                     Does this tour require physical fitness?
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body faq-accordion__container-text">
                                     This tour is suitable for untrained tourists.
                                     No cliff climbing, we promise.
@@ -506,11 +520,14 @@
                         </div>
                         <div class="accordion-item faq-accordion__container">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
                                     Will I be able to see the Northern Lights?
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body faq-accordion__container-text">
                                     We cannot promise you this. The Northern Lights
                                     only appear in winter under special circumstances.
@@ -520,11 +537,14 @@
                         </div>
                         <div class="accordion-item faq-accordion__container">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
                                     Can I take my children with me on the tour?
                                 </button>
                             </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body faq-accordion__container-text">
                                     Yes, we offer a 50% discount for children.
                                 </div>
@@ -532,11 +552,14 @@
                         </div>
                         <div class="accordion-item faq-accordion__container">
                             <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
                                     Can I join you not in Oslo, but in another city?
                                 </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body faq-accordion__container-text">
                                     Depending on the weather conditions, our route may
                                     change, so we strongly recommend starting with other
@@ -550,7 +573,8 @@
                 </div>
                 <div class="faq__photo">
                     <div class="faq__photo-container">
-                        <img class="faq__photo-man" src="img/norwegian-mountains.jpeg" alt="A man looks at the Norwegian mountains">
+                        <img class="faq__photo-man" src="img/norwegian-mountains.jpeg"
+                            alt="A man looks at the Norwegian mountains">
                     </div>
                 </div>
             </div>
@@ -647,6 +671,9 @@
     <footer class="footer">
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
