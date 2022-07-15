@@ -42,6 +42,9 @@ img {
 
 body {
     min-width: 320px;
+    overflow-x: hidden; /* duplicate for bootstrap */
+    font-family: 'Roboto', sans-serif; /* duplicate for bootstrap */
+    color: var(--text-color); /* duplicate for bootstrap */
 }
 
 a {

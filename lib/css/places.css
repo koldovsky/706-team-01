@@ -14,20 +14,68 @@
     color: var(--text-color);
     letter-spacing: 1.35px;
     line-height: 54px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .places__header-description{
     font-family: Roboto, sans-serif;
     line-height: 32.3px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
-.places__cities-name{
+.places__cities-container{
+    margin-top: 45px;
+    min-width: 320px;
+}
+.places__cities{
     color: var(--text-color);
     font-family: Roboto, sans-serif;
     font-size: 17px;
     font-weight: 700;
     letter-spacing: 0.51px;
     line-height: 28.9px;
+    display: flex;
+}
+
+.places__city-name{
+    flex: 1;
+    margin-bottom: 0px;
+    align-content: space-around;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.places__city-block{
+    padding: 39px 43px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.places__city-image-contaiter{
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 58% 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.places__city-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trondheim .places__city-image{
+    object-position: 50% 80%;
+}
+
+.places__city-main-info{
+    padding: 39px 0;
 }
 
 .places__city-subtitle{
@@ -37,6 +85,8 @@
     font-weight: 500;
     letter-spacing: 0.39px;
     line-height: 20.8px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .places__city-title {
@@ -44,6 +94,13 @@
     color: var(--text-color);
     font-size: 36px;
     line-height: 47.88px;
+    margin-top: 20px;
+}
+
+.places__city-stay{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .places__city-stay-duration{
@@ -52,6 +109,7 @@
     font-weight: 700;
     line-height: 32.3px;
     color: var(--title-dash);
+    margin-bottom: 5px;
 }
 
 .places__city-stay-hotel{
@@ -69,15 +127,37 @@
     color: var(--text-description-tab-color);
     line-height: 28.9px;
     letter-spacing: 0.51px;
-
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
-.places__city-details{
+.places__city-details-container{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+
+div[class="places__city-details-container"] img{
+    max-width: 20px;
+    max-height: 20px;
+    vertical-align: baseline;
+}
+
+.places__city-details-text{
     font-family: Roboto, sans-serif;
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    vertical-align: baseline;
+}
+
+.places__city-button-container{
+    margin-top: 35px;
+    margin-bottom: 0;
 }
 
 .places__city-book-button{
@@ -88,13 +168,45 @@
     color: var(--text-white-color);
     background: var(--button-color);
     text-decoration: none;
+    padding: 14px 20px;
+}
+
+.places__city-book-button:hover{
+    background: var(--bs-accordion-bg);
+    transition: 1s;
+    color: var(--text-white-color);
+}
+
+
+@media (min-width: 767px) {
+    .places__city-block {
+        flex-direction: row;
+        padding: 60px 70px;
+    }
+    .places__city-image-contaiter{
+        flex: 1;
+    }
+    .places__city-main-info{
+        flex: 1;
+        padding: 60px 70px;
+    }
+    .places__city-stay{
+        flex-direction: row;
+    }
+    .places__city-stay-duration{
+        flex: 1;
+        margin-bottom: 0;
+        text-justify: auto;
+    }
+    .places__city-stay-hotel{
+        flex: 1;
+        padding-top: 6px;
+        padding-left: 15px;
+    }
+
 
 }
 
 
 
 
-
-section[class="places"] img{
-    width: 50px;
-}
