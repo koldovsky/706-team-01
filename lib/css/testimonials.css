@@ -1,10 +1,15 @@
 .testimonials-icons {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin: 30px auto;
+    margin: px auto;
 }
 
 .section-testimonials {
-    background: url(../../img/testimonials/background_testimonials.png)
+    background: url(../../img/testimonials/background_testimonials.png);
+    padding: 150px;
+}
+
+.testimonials-preview {
+    text-align: center;
 }
