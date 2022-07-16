@@ -42,6 +42,8 @@ h3 {
     --bs-accordion-active-bg: var(--background-dark-color);
     --bs-accordion-active-color: var(--title-accordion-color);
     --bs-accordion-body-padding-x: 0;
+    --bs-accordion-btn-padding-y: 20px;
+    --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-bg: #232428;
 }
 
@@ -90,7 +92,6 @@ h3 {
 
 .faq-accordion__container {
     border-bottom: 0.001px solid var(--text-accordion-color);
-    padding: 10px 0;
 }
 
 .faq-accordion__container-title {
@@ -110,10 +111,14 @@ h3 {
     cursor: pointer;
 }
 
+.accordion-body {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
 .faq-accordion__container-text {
     color: var(--text-accordion-color);
     font-size: 14px;
-    margin-top: 25px;
 }
 
 .faq__hr {
