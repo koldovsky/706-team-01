@@ -49,6 +49,38 @@ h3 {
     box-shadow: none;
 }
 
+.accordion-button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+
+.accordion-button::after {
+    content: none;
+}
+
+.plus-container > span,
+.plus-container::before {
+    background-color: var(--plus-color);
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 1.8px; 
+    position: relative;
+    right: 20px; 
+    width: 15px;
+}
+
+.plus-container > span {
+    left: -20px; 
+} 
+
+.plus-container::before {
+    top: 2px;
+    transform: rotate(90deg);   
+}
+
 .faq-accordion {
     font-size: 17px;
     font-weight: 400;
@@ -71,6 +103,7 @@ h3 {
     text-align: left;
     transition: 0.4s;
     width: 100%;
+    line-height: 1.7;
 }
 
 .faq-accordion__container-title:hover {
