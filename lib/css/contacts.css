@@ -14,3 +14,7 @@
         background-image: url(../../img/contacts/background-contacts-from1200.jpeg);
     }
 }
+
+.contacts__img {
+    width: 50px;
+}

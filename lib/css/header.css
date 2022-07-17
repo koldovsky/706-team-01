@@ -75,8 +75,6 @@
     }
 }
 
-
-
 /* Burger*/
 
 body.lock {
@@ -128,7 +126,6 @@ section div nav .main-nav__burger span {
 .main-nav__burger.active::before {
     transform: rotate(-45deg);
     top: 50%;
-
 }
 
 .main-nav__burger.active::after {
