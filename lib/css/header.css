@@ -1,6 +1,19 @@
 .header {
-    background: url(../../img/header/background-header.png) no-repeat center top;
+    background: url(../../img/header/background-header-to767px.png) no-repeat 91.56% 51.56%;
+    background-size: cover;
     color: var(--text-color-header);
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-image: url(../../img/header/background-header-from768px.png);
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background-image: url(../../img/header/background-header-from1200px.png);
+    }
 }
 
 .header__container {
@@ -15,8 +28,35 @@
     min-height: 100px;
 }
 
-.main-nav {
-    display: none;
+.header__logo-main {
+    z-index: 9;
+}
+
+@media (max-width: 991px) {
+    .main-nav {
+        background-color: var(--background-main-nav);
+        height: 100%;
+        left: 0;
+        margin: auto;
+        overflow: hidden;
+        padding: 100px 24px 50px 24px;
+        position: fixed;
+        transition: top 0.3s ease-in 0.1s;
+        top: -100%;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .main-nav__link {
+        color: var(--text-color-header);
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -35,12 +75,89 @@
     }
 }
 
+
+
+/* Burger*/
+
+body.lock {
+    overflow: hidden;
+}
+
+.main-nav__burger {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    padding: 12px;
+    position: relative;
+    width: 30px;
+    z-index: 5;
+}
+
+.main-nav__burger span,
+.main-nav__burger::before,
+.main-nav__burger::after {
+    background-color: var(--header-button);
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+}
+
+section div nav .main-nav__burger span {
+    transform: scale(1);
+}
+
+.main-nav__burger::before,
+.main-nav__burger::after {
+    content: " ";
+}
+
+.main-nav__burger::before {
+    top: 0;
+}
+
+.main-nav__burger::after {
+    bottom: 0;
+}
+
+.main-nav__burger.active span {
+    transform: scale(0);
+}
+
+.main-nav__burger.active::before {
+    transform: rotate(-45deg);
+    top: 50%;
+
+}
+
+.main-nav__burger.active::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+}
+
+@media (min-width: 992px) {
+    .main-nav__burger {
+        display: none;
+    }
+}
+
+.main-nav.active {
+    top: 0;
+}
+
+.header__wrapper.active {
+    top: 0;
+}
+
+/* Burger end*/
+
 .header-banner {
     display: flex;
     flex-direction: column;
     min-height: 600px;
     padding: 90px 0;
-} 
+}
 
 .header-banner__intro {
     display: flex;
