@@ -1,10 +1,16 @@
 .about-us {
     padding-top: 90px;
     padding-bottom: 150px;
-    background: url(../../img/background_about_us.jfif) 6.25% 58.07% / cover no-repeat;
+    background: url(../../img/about_us_bg.jpg) 96.25% 58.07% / cover no-repeat;
 }
 
+.about-us__info {
+    display: flex;
+}
 
+.about-us__main-block {
+    padding: 0px 15px;
+}
 
 .about-us__subtitle-brand-color {
     color: var(--about-us__subtitle-brand-color);
@@ -12,6 +18,7 @@
 
 .about-us__bottom-section-item {
     padding: 25px 29px;
+    background-color: var(--about-us__bottom-section-item);
 }
 
 .about-us__bottom-section-item-title {
@@ -35,7 +42,7 @@
         padding-top: 90px;
         padding-bottom: 275px;
     }
-
+    
     .about-us__bottom-section-item-title {
         font-size: 23px;
     }
