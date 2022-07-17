@@ -11,11 +11,68 @@
 }
 
 .tour-itinerary__grid-item {
-    padding: 0 40px;
+    padding: 31px 27px;
 }
 
 .tour-itinerary__grid-item:first-child {
     padding: 0 15px;
+}
+
+.tour-itinerary__grid-item>.description {
+    margin-top: 40px;
+}
+
+.tour-itinerary__list {
+    margin-top: 20px;
+}
+
+.tour-itinerary__list-item {
+    padding: 15px 0;
+    display: flex;
+}
+
+.tour-itinerary__list-item-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: .03em;
+    color: var(--tour-itinerary-list-item-title-color);
+}
+
+.tour-itinerary__list-item-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #a9a9a9;
+}
+
+.tour-itinerary__icon {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.tour-itinerary__icon:before {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center center;
+    margin-right: 15px;
+}
+
+.tour-itinerary__icon_official-license:before {
+    background-image: url(../../img/tour-itinerary/tour-itinerary__official-license.svg);
+}
+
+.tour-itinerary__icon_professional-guide:before {
+    background-image: url(../../img/tour-itinerary/tour-itinerary__professional-guide.svg);
+}
+
+.tour-itinerary__icon_satisfaction:before {
+    background-image: url(../../img/tour-itinerary/tour-itinerary__satisfaction.svg);
 }
 
 @media screen and (min-width: 768px) {
@@ -31,6 +88,21 @@
     .tour-itinerary__grid-item {
         max-width: 50%;
         flex-basis: 50%;
+        padding: 34px 28px;
+    }
+
+    .tour-itinerary__list-item-title {
+        font-size: 19px;
+    }
+
+    .tour-itinerary__icon {
+        width: 70px;
+    }
+
+    .tour-itinerary__icon:before {
+        height: 70px;
+        width: 70px;
+        background-size: 40px;
     }
 }
 
@@ -38,5 +110,17 @@
     .tour-itinerary {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .tour-itinerary__grid-item { 
+        padding: 40px 30px;
+    }
+
+    .tour-itinerary__list-item-title {
+        font-size: 21px;
+    }
+
+    .tour-itinerary__list-item-text {
+        font-size: 15px;
     }
 }

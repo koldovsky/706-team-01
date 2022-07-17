@@ -36,7 +36,11 @@
     --about-us__subtitle-brand-color: #14a9ee;    
     --about-us__bottom-section-item-title: rgb(35, 36, 40);
     --testimonials-quote-text-color: rgb(112, 112, 112);
+<<<<<<< HEAD
     --about-us__bottom-section-item: rgb(255, 255, 255);
+=======
+    --tour-itinerary-list-item-title-color: #fff;
+>>>>>>> 1c6d57be86c22e18afc14b6b0c15bae1fa42fe09
 }
 
 
@@ -58,4 +62,8 @@ body {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0; /* reset bootstrap margins*/
 }
