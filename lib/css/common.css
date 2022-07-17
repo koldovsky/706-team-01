@@ -33,7 +33,13 @@
     --header-button: rgb(255, 255, 255);
     --promo-video-caption: #fff;
     --main-nav: rgb(247, 247, 247);
+    --about-us__subtitle-brand-color: #14a9ee;    
+    --about-us__bottom-section-item-title: rgb(35, 36, 40);
 }
+
+
+
+
 
 img {
     display: block;
