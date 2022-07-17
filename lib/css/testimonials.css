@@ -1,7 +1,7 @@
 
 .section-testimonials {
     background: url(../../img/testimonials/background_testimonials.png);
-    padding: 150px;
+    padding: 150px 0 110px 0;
 }
 
 .testimonials-preview {
@@ -24,7 +24,8 @@
     font-size: 14px;
     color: var(--text-color);
     font-weight: 700;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .testimonials-preview__content  {
@@ -38,6 +39,41 @@
 }
 
 .background-slide {
-    height: 400px;
+    height: 600px;
 }
 
+@media (min-width: 450px) {
+    .background-slide {
+        height: 550px;
+    }
+}
+
+@media (min-width: 500px) {
+    .background-slide {
+        height: 520px;
+    }
+}
+
+@media (min-width: 550px) {
+    .background-slide {
+        height: 500px;
+    }
+}
+
+@media (min-width: 650px) {
+    .background-slide {
+        height: 470px;
+    }
+}
+
+@media (min-width: 830px) {
+    .background-slide {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .background-slide {
+        height: 430px;
+    }
+}
