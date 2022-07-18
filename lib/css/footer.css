@@ -19,3 +19,19 @@
 .footer__logo-main {
     margin-bottom: 31px;
 }
+
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.social-buttons {
+    display: flex;
+    align-items: center;
+    
+}
