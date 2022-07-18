@@ -32,6 +32,10 @@
     z-index: 9;
 }
 
+.main-nav__link:hover {
+    color: var(--main-nav);
+}
+
 @media (max-width: 991px) {
     .main-nav {
         background-color: var(--background-main-nav);
@@ -249,6 +253,12 @@ section div nav .main-nav__burger span {
 .header-button_border {
     border: 2px solid var(--header-button);
     text-align: center;
+}
+
+.header-button_border:hover {
+    color: var(--header-button-hover);
+    background-color: var(--header-button);
+    font-weight: 600;
 }
 
 @media (min-width: 768px) {
