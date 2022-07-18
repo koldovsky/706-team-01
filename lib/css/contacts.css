@@ -1,6 +1,19 @@
 .contacts {
     background: url(../../img/contacts/background-contacts-to767.jpeg) no-repeat 50.94% 57.66%;
     background-size: cover;
+    color: var(--text-contacts);
+    max-height: 811px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.contacts__details-link {
+    color: var(--text-contacts);
+    text-decoration: underline;
+}
+
+.contacts__details-link:hover {
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -18,3 +31,4 @@
 .contacts__img {
     width: 50px;
 }
+
