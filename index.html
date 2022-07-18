@@ -102,7 +102,6 @@
                         </p>
                     </div>
                 </div>
-<<<<<<< HEAD
 
 
                 <div class="about-us__bottom-section">
@@ -134,45 +133,6 @@
                     </article>
                 </div>
             </div>
-=======
-                <div class="about-us__main-block">
-                    <p class="description description_dark"> We offer guided tours in Norway - one of the most
-                        beautiful Nordic countries. We will cross the entire country, from Oslo to Tromsø, visit amazing
-                        cities, and see stunning nature.</p>
-                    <br>
-                    <p class="description description_dark">
-                        The program is carefully thought out, there are no more than 10 people in each group plus an
-                        English-speaking guide. Comfortable vans and nights in 3*+ hotels are included in the price.
-                    </p>
-                </div>
-            </div>
-
-            <div class="about-us__bottom-section">
-                <article class="about-us__bottom-section-item">
-                    <img class="about-us__bottom-section-item-image" src="img/numberone.png" width="10"
-                        alt="Number One">
-                    <h3 class="about-us__bottom-section-item-title">Contact us</h3>
-                    <p class="description description_dark about-us_description">Some tour conditions may be changed
-                        according to the season. To learn more about the program, please contact us.</p>
-                </article>
-
-                <article class="about-us__bottom-section-item">
-                    <img class="about-us__bottom-section-item-image" src="img/numbertwo.png" width="10"
-                        alt="Number Two">
-                    <h3 class="about-us__bottom-section-item-title">Pick a date</h3>
-                    <p class="description description_dark about-us_description">We conduct tours all year round, almost
-                        every week, but the most comfortable weather for sightseeing is in summer.</p>
-                </article>
-
-                <article class="about-us__bottom-section-item">
-                    <img class="about-us__bottom-section-item-image" src="img/numberthree.png" width="10"
-                        alt="Number Three">
-                    <h3 class="about-us__bottom-section-item-title">Start your journey</h3>
-                    <p class="description description_dark about-us_description">If necessary, we help you apply for a
-                        visa to Norway, as well as advise what things you should take with you.</p>
-                </article>
-            </div>
->>>>>>> 1c6d57be86c22e18afc14b6b0c15bae1fa42fe09
         </section>
 
 
@@ -300,16 +260,26 @@
                 </header>
 
                 <div class="places__cities-container">
-                    <div class="places__cities">
-                        <p class="places__city-name">Oslo</p>
-                        <p class="places__city-name">Trondheim</p>
-                        <p class="places__city-name">Bodø</p>
-                        <p class="places__city-name">Lofoten Islands</p>
-                        <p class="places__city-name">Tromsø</p>
-                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#city_oslo">Oslo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#city_trondheim">Trondheim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#city_bode">Bodø</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#city_lofoten-islands">Lofoten Islands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#city_tromse">Tromsø</a>
+                        </li>
+                    </ul>
 
-                    <div class="places__cities-description">
-                        <article class="places__city-block oslo">
+                    <div class="places__cities-description tab-content">
+                        <article class="places__city-block oslo tab-pane active" id="city_oslo">
                             <div class="places__city-image-contaiter">
                                 <img src="img/places/oslo.jpeg" class="places__city-image"
                                     alt="People walking near the river in Oslo">
@@ -346,7 +316,7 @@
                             </div>
                         </article>
 
-                        <article class="places__city-block trondheim">
+                        <article class="places__city-block trondheim tab-pane" id="city_trondheim">
                             <div class="places__city-image-contaiter">
                                 <img src="img/places/trondheim.jpeg" class="places__city-image"
                                     alt="The bridge over a river in a mountainous area where placed buildings">
@@ -383,7 +353,7 @@
                             </div>
                         </article>
 
-                        <article class="places__city-block bode">
+                        <article class="places__city-block bode tab-pane" id="city_bode">
                             <div class="places__city-image-contaiter">
                                 <img src="img/places/bode.jpeg" class="places__city-image"
                                     alt="Ships are sailing on a river in the mountains, which is located near the small town">
@@ -420,7 +390,7 @@
                             </div>
                         </article>
 
-                        <article class="places__city-block lofoten-islands">
+                        <article class="places__city-block lofoten-islands tab-pane" id="city_lofoten-islands">
                             <div class="places__city-image-contaiter">
                                 <img src="img/places/lofoten-islands.jpeg" class="places__city-image"
                                     alt="A lot of small islands in the ocean">
@@ -459,7 +429,7 @@
                             </div>
                         </article>
 
-                        <article class="places__city-block tromse">
+                        <article class="places__city-block tromse tab-pane" id="city_tromse">
                             <div class="places__city-image-contaiter">
                                 <img src="img/places/tromse.jpeg" class="places__city-image"
                                     alt="The countryside and mountains under the Northern Lights">
@@ -509,14 +479,8 @@
                 <p class="subtitle subtitle-stunning-spots">Beautiful<span class="subtitle-accent color">
                         Landscapes</span></p>
                 <p class="description description_light description-text">The beauty of Norway can hardly be
-<<<<<<< HEAD
-                    overestimated. It has
-                    literally everything: glaciers, green forests,
-                    beaches. Come and see with your own eyes.</p>
-=======
                     overestimated. It has literally everything: glaciers, green forests, beaches. Come and see with your
                     own eyes.</p>
->>>>>>> 1c6d57be86c22e18afc14b6b0c15bae1fa42fe09
                 <div id="carousel-photos-stunning-spots" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel-photos-stunning-spots" data-bs-slide-to="0"
