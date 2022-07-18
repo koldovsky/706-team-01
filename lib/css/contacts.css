@@ -93,7 +93,7 @@
 
 @media (min-width: 1200px) {
     .contacts {
-        background-image: url(../../img/contacts/background-contacts-from1200.jpeg);
+        background: url(../../img/contacts/background-contacts-from1200.jpeg) no-repeat 50.94% 19.66%;
     }
 }
 
