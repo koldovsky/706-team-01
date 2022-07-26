@@ -10,6 +10,12 @@
     margin-bottom: 40px;
 }
 
+.testimonials-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .testimonials-icons {
     width: 120px;
     height: 120px;
