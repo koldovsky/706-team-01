@@ -2,10 +2,12 @@
 .section-testimonials {
     background: url(../../img/testimonials/background_testimonials.png);
     padding: 150px 0 110px 0;
+    text-align: center;
 }
 
-.testimonials-preview {
-    text-align: center;
+.testimonials-preview__content  {
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .testimonials-icons {
@@ -15,9 +17,15 @@
     margin: auto;
 }
 
+.testimonials-person {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 .testimonials-quote {
     font-size: 17px;
     color: var(--testimonials-quote-text-color);
+
 }
 
 .testimonials-quote-date {
@@ -26,16 +34,6 @@
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.testimonials-preview__content  {
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.testimonials-person {
-    margin-bottom: 30px;
-    margin-top: 20px;
 }
 
 .background-slide {
