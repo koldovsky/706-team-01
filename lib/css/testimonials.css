@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.testimonials-preview {
+    padding: 0px 15%;
+}
+
 .testimonials-preview__content  {
     margin-top: 50px;
     margin-bottom: 40px;
@@ -17,8 +21,8 @@
 }
 
 .testimonials-icons {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin: auto;
 }
@@ -26,6 +30,7 @@
 .testimonials-person {
     margin-bottom: 30px;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .testimonials-quote {
@@ -40,46 +45,6 @@
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.background-slide {
-    height: 600px;
-}
-
-@media (min-width: 450px) {
-    .background-slide {
-        height: 550px;
-    }
-}
-
-@media (min-width: 500px) {
-    .background-slide {
-        height: 520px;
-    }
-}
-
-@media (min-width: 550px) {
-    .background-slide {
-        height: 500px;
-    }
-}
-
-@media (min-width: 650px) {
-    .background-slide {
-        height: 470px;
-    }
-}
-
-@media (min-width: 830px) {
-    .background-slide {
-        height: 450px;
-    }
-}
-
-@media (min-width: 1060px) {
-    .background-slide {
-        height: 430px;
-    }
 }
 
 .arrow-left-3,
@@ -108,11 +73,18 @@
 .testimonials-carousel__btn-prev {
     border: none;
     background: none;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .testimonials-carousel__btn-next {
     border: none;
     background: none;
-    margin-left: 30px;
+    margin-left: 40px;
+}
+
+@media (min-width: 768px) {
+    .testimonials-icons {
+        width: 120px;
+        height: 120px;
+    }
 }
