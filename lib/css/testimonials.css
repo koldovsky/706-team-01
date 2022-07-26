@@ -81,3 +81,38 @@
         height: 430px;
     }
 }
+
+.arrow-left-3,
+.arrow-right-3 {
+    margin: 20px 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.arrow-left-3 path,
+.arrow-right-3 path {
+    fill: #4a4d50;
+    transition: fill 0.5s ease-out;
+}
+
+.arrow-left-3 {
+    transform: rotate(180deg);
+}
+
+.arrow-left-3:hover path,
+.arrow-right-3:hover path {
+    fill: #000;
+}
+
+.testimonials-carousel__btn-prev {
+    border: none;
+    background: none;
+    margin-right: 30px;
+}
+
+.testimonials-carousel__btn-next {
+    border: none;
+    background: none;
+    margin-left: 30px;
+}
