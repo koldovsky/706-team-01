@@ -130,12 +130,71 @@
     }
 }
 
-.about-norway__weather-result-box {
+.weather__container {
     display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr 50px;
+    height: 200px;
+    justify-items: center;
+    align-items: center;
 }
 
-.about-norway__weather-result-box img {
+.weather__arrow {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+}
+
+.weather__arrow:before { 
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	     -o-transition: all .3s;
+			transition: all .3s;
+}
+
+.weather__arrow_left {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.weather__arrow_right {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.weather__arrow:hover:before {
+    -webkit-transform: skew(-10deg,-10deg);
+    -moz-transform: skew(-10deg,-10deg);
+    -ms-transform: skew(-10deg,-10deg);
+    -o-transform: skew(-10deg,-10deg);
+    transform: skew(-10deg,-10deg);
+}
+
+
+.weather__fetch-result-box {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.weather__fetch-result-box > div{
+    flex-grow: 1;
+    min-width: 33.333%;
+    flex-basis: 33.333%;
+}
+
+.weather__fetch-result-box img {
     width: 48px;
 }
