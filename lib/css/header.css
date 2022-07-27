@@ -106,6 +106,8 @@ body.lock {
     width: 100%;
 }
 
+.active
+
 section div nav .main-nav__burger span {
     transform: scale(1);
 }
@@ -135,6 +137,7 @@ section div nav .main-nav__burger span {
 .main-nav__burger.active::after {
     bottom: 40%;
     transform: rotate(45deg);
+    background-color: var(--header-button);
 }
 
 @media (min-width: 992px) {
