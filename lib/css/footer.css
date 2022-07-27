@@ -62,3 +62,9 @@
     display: flex;
     align-items: center; 
 }
+
+.social-buttons__link {
+    width: 22px;
+    height: auto;
+    cursor: pointer;
+}
