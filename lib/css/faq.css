@@ -37,40 +37,6 @@ h3 {
     margin-top: 25px;   
 }
 
-.accordion {
-    --bs-accordion-active-bg: var(--background-dark-color);
-    --bs-accordion-active-color: var(--title-accordion-color);
-    --bs-accordion-body-padding-x: 0;
-    --bs-accordion-btn-padding-y: 20px;
-    --bs-accordion-btn-padding-x: 0;
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-bg: #232428;
-}
-
-.accordion-button:not(.collapsed) {
-    box-shadow: none;
-}
-
-.accordion-button::after {
-    content: none;
-}
-
-.plus-container,
-.plus-container::before {
-    background-color: var(--plus-color);
-    border-radius: 5px;
-    content: "";
-    display: block;
-    height: 1.8px; 
-    margin-right: 20px;
-    position: relative; 
-    width: 15px;
-}
-
-.plus-container::before {
-    transform: rotate(90deg);   
-}
-
 .faq-accordion {
     font-size: 17px;
     font-weight: 400;
@@ -78,46 +44,64 @@ h3 {
     margin-top: 25px;
 }
 
-.faq-accordion__container {
+.faq-accordion__wrappper {
     border-bottom: 0.001px solid var(--text-accordion-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.faq-accordion__container-title {
+.faq-accordion__wrappper-title {
     align-items: center;
-    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.faq-accordion__wrappper-title__plus,
+.faq-accordion__wrappper-title__plus::before {
+    background-color: var(--plus-color);
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 1.8px; 
+    margin-right: 21px;
+    position: relative; 
+    width: 15px;
+}
+
+.faq-accordion__wrappper-title__plus::before {
+    opacity: 1;
+    transform: rotate(90deg); 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.faq-accordion__wrappper-title__question {
     color: var(--title-accordion-color);
     letter-spacing: .03em; 
-    margin-top: 0;
-    outline: none;
-    text-align: left;
-    transition: 0.4s;
-    width: 100%;
     line-height: 1.7;
-}
+}  
 
-.faq-accordion__container-title:hover {
-    cursor: pointer;
-}
-
-.accordion-body {
-    padding-top: 0;
-    padding-bottom: 20px;
-}
-
-.faq-accordion__container-text {
+.faq-accordion__wrapper-text {
     color: var(--text-accordion-color);
+    display: none;
     font-size: 14px;
+    padding-top: 20px;
 }
 
-.faq__hr {
-    margin: 0;
+.faq-accordion__wrappper.active .faq-accordion__wrapper-text {
+    display: block;
+}
+
+.faq-accordion__wrappper.active .faq-accordion__wrappper-title__plus::before {
+    opacity: 0; 
 }
 
 .faq__photo {
     margin-top: 50px;
 }
 
-.faq__photo-container {
+.faq__photo-wrapper {
     position: relative;
     width: 100%;
 }
