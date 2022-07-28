@@ -93,12 +93,16 @@
     height: 10px;
     border-radius: 50%;
     border: none;
-    background-color: rgb(129, 123, 123);
+    background-color: rgb(165, 164, 164);
     margin: 10px;
 }
 
 .circle:hover {
     background-color: rgb(0, 0, 0);
+}
+
+.circle:focus {
+    background-color: rgb(92, 92, 92);
 }
 
 @media (min-width: 768px) {
