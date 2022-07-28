@@ -9,8 +9,6 @@
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     color: var(--text-color);
-    --bs-accordion-bg: #232428;
-    --bs-body-color: #ffff;
     --plus-color: rgba(255, 255, 255);
     --text-color: rgb(80, 81, 85);
     --border-color: #ccc;
@@ -45,10 +43,6 @@
     --about-us__bottom-section-item: rgb(255, 255, 255);
     --tour-itinerary-list-item-title-color: #fff;
 }
-
-
-
-
 
 img {
     display: block;
