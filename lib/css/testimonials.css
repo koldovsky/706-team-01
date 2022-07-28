@@ -82,6 +82,21 @@
     margin-left: 40px;
 }
 
+.testimonials-carousel__circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(129, 123, 123);
+    margin: 10px;
+}
+
 @media (min-width: 768px) {
     .testimonials-icons {
         width: 120px;
