@@ -506,7 +506,12 @@
                 <p class="description description_light description-text">The beauty of Norway can hardly be
                     overestimated. It has literally everything: glaciers, green forests, beaches. Come and see with your
                     own eyes.</p>
-                <div id="carousel-photos-stunning-spots" class="carousel slide" data-bs-ride="true">
+                    <div class="stunning-spots-carousel">
+                        <button class="stunning-spots-carousel__btn-prev"><</button>
+                        <div class="stunning-spots-carousel__slides"></div>
+                        <button class="stunning-spots-carousel__btn-next">></button>
+                    </div>
+                <!-- <div id="carousel-photos-stunning-spots" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel-photos-stunning-spots" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -557,7 +562,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
+                </div> -->
                 <div class="quote">
                     <div class="quote__divider">
                         <span class="quote__icon-path">
@@ -593,79 +598,58 @@
                         We tried to make our Norway tour as comfortable and interesting as possible. If you still have
                         questions, you can contact us directly or fill out the form below.
                     </p>
-                    <div class="accordion accordion-flush faq-accordion" id="accordionFlushExample">
-                        <div class="accordion-item faq-accordion__container">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    <span class="plus-container"></span>
+                    <div class="faq-accordion">
+                        <div class="faq-accordion__wrapper">
+                            <div class="faq-accordion__wrapper-title">
+                                <span class="faq-accordion__wrapper-title__plus"></span>
+                                <div class="faq-accordion__wrapper-title__question">
                                     Does this tour require physical fitness?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-accordion__container-text">
-                                    This tour is suitable for untrained tourists. No cliff climbing, we promise.
                                 </div>
                             </div>
+                            <div class="faq-accordion__wrapper-text">
+                                This tour is suitable for untrained tourists. No cliff climbing, we promise.
+                            </div>
                         </div>
-                        <div class="accordion-item faq-accordion__container">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    <span class="plus-container"></span>
+                        <div class="faq-accordion__wrapper">
+                            <div class="faq-accordion__wrapper-title">
+                                <span class="faq-accordion__wrapper-title__plus"></span>
+                                <div class="faq-accordion__wrapper-title__question">
                                     Will I be able to see the Northern Lights?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-accordion__container-text">
-                                    We cannot promise you this. The Northern Lights only appear in winter under special
-                                    circumstances. But we will hunt it in Tromsø.
                                 </div>
                             </div>
+                            <div class="faq-accordion__wrapper-text">
+                                We cannot promise you this. The Northern Lights only appear in winter under special
+                                circumstances. But we will hunt it in Tromsø.
+                            </div>
                         </div>
-                        <div class="accordion-item faq-accordion__container">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                    aria-expanded="false" aria-controls="flush-collapseThree">
-                                    <span class="plus-container"></span>
+                        <div class="faq-accordion__wrapper">
+                            <div class="faq-accordion__wrapper-title">
+                                <span class="faq-accordion__wrapper-title__plus"></span>
+                                <div class="faq-accordion__wrapper-title__question">
                                     Can I take my children with me on the tour?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-accordion__container-text">
-                                    Yes, we offer a 50% discount for children.
                                 </div>
                             </div>
+                            <div class="faq-accordion__wrapper-text">
+                                Yes, we offer a 50% discount for children.
+                            </div>
                         </div>
-                        <div class="accordion-item faq-accordion__container">
-                            <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed  faq-accordion__container-title" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
-                                    <span class="plus-container"></span>
+                        <div class="faq-accordion__wrapper">
+                            <div class="faq-accordion__wrapper-title">
+                                <span class="faq-accordion__wrapper-title__plus"></span>
+                                <div class="faq-accordion__wrapper-title__question">
                                     Can I join you not in Oslo, but in another city?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-accordion__container-text">
-                                    Depending on the weather conditions, our route may change, so we strongly recommend
-                                    starting with other tourists from Oslo. We do not change the route to pick up
-                                    tourists on the way.
                                 </div>
                             </div>
+                            <div class="faq-accordion__wrapper-text">
+                                Depending on the weather conditions, our route may change, so we strongly recommend
+                                starting with other tourists from Oslo. We do not change the route to pick up
+                                tourists on the way.
+                            </div>
                         </div>
-                        <hr class="faq__hr">
                     </div>
                 </div>
                 <div class="faq__photo">
-                    <div class="faq__photo-container">
+                    <div class="faq__photo-wrapper">
                         <img class="faq__photo-man" src="img/norwegian-mountains.jpeg"
                             alt="A man looks at the Norwegian mountains">
                     </div>
@@ -714,7 +698,7 @@
             </div>
         </section>
 
-        <!--part of Yurii Holovetskyi-->
+        <!--part of Yurii Holovetskyi--> 
         <section class="section-testimonials">
             <div class="container">
                 <div class="testimonials-preview">
@@ -724,83 +708,24 @@
                         indifferent. Its stunning nature,
                         friendly people, beautiful cities, and delicious cuisine will be remembered forever.</p>
                 </div>
-                <div class="testimonials-carousel">
-                    <button class="testimonials-carousel__btn-prev"><svg class="arrow-left-3" viewBox="0 0 5 9">
-                            <path
-                                d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
-                        </svg></button>
-                    <div class="testimonials-carousel__slides__container"></div>
-                    <button class="testimonials-carousel__btn-next"> <svg class="arrow-right-3" viewBox="0 0 5 9">
-                            <path
-                                d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
-                        </svg></button>
+                <div class="testimonials-carousel__container">
+                    <div class="testimonials-carousel">
+                        <button class="testimonials-carousel__btn-prev"><svg class="arrow-left-3" viewBox="0 0 5 9">
+                                <path
+                                    d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                            </svg></button>
+                        <div class="testimonials-carousel__slides__container"></div>
+                        <button class="testimonials-carousel__btn-next"> <svg class="arrow-right-3" viewBox="0 0 5 9">
+                                <path
+                                    d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                            </svg></button>
+                    </div>
+                    <div class="testimonials-carousel__circles">
+                        <button class="circle first-circle"></button>
+                        <button class="circle second-circle"></button>
+                        <button class="circle third-circle"></button>
+                    </div>
                 </div>
-                <!--<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <div class="background-slide"></div>
-                            <div class="carousel-caption d-md-block">
-                                <img src="img/testimonials/cole_tiers.png" class="testimonials-icons" alt="Cole Tiers in the mountains">
-                                <h5 class="testimonials-person">Cole Tiers</h5>
-                                <p><span class="testimonials-quote">I wanted to see Norway since childhood when
-                                        I saw a stylish house right in the middle of the Norwegian forest in some
-                                        magazine.
-                                        I thought then that I also want to live in such a house. This dream came true a
-                                        few
-                                        months ago on a tour of Norway. I am very happy! Thanks, guys!</span></p>
-                                <p class="testimonials-quote-date">October 28, 2018</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="background-slide"></div>
-                            <div class="carousel-caption d-md-block">
-                                <img src="img/testimonials/lilland_forester.png" class="testimonials-icons" alt="Lilland Forester with daughter">
-                                <h5 class="testimonials-person">Lilland Forester</h5>
-                                <p><span class="testimonials-quote">We went on this tour with our daughter,
-                                        she was 5 years old. I was worried that it would be difficult for her but
-                                        everything
-                                        went great. We spent nights in good hotels with excellent breakfasts. My
-                                        daughter always
-                                        had something to eat, and the nature in Norway fascinated her even more than
-                                        us!</span></p>
-                                <p class="testimonials-quote-date">May 13, 2019</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="background-slide"></div>
-                            <div class="carousel-caption d-md-block">
-                                <img src="img/testimonials/gull.jpg" class="testimonials-icons" alt="Gull">
-                                <h5 class="testimonials-person">Alice Hendricks</h5>
-                                <p><span class="testimonials-quote">I still can't believe I have seen the Northern
-                                        Lights with my own eyes! That was incredible! When we arrived in Tromso, it was
-                                        constantly
-                                        snowing, the weather was bad, and the guide said that we were out of luck, most
-                                        likely.
-                                        But on the last night, right at midnight, the clouds left, and I saw it! It was
-                                        magicall</span></p>
-                                <p class="testimonials-quote-date">January 12, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div> -->
             </div>
         </section>
         <!--end Yurii Holovetskyi-->
@@ -883,8 +808,9 @@
     <script type="text/javascript" src="lib/js/burger-menu.js"></script>
     <script src="lib/js/testimonials-carousel.js"></script>
     <script src="lib/js/about-norway.js"></script>
-    <script type="text/javascript" src="lib/js/faq-accordion.js"></script>
+    <script src="lib/js/faq-accordion.js"></script>
     <script type="text/javascript" src="lib/js/header-clock.js"></script>
+    <script src="lib/js/stunning-spots-carousel.js"></script>
 </body>
 
 </html>
