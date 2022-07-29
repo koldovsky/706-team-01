@@ -44,6 +44,65 @@ function getVendorPrefix() {
     return vendors[match[0]];
 }
 
+(function (w) {
+    // onElementResize
+
+    let attachEvent = document.attachEvent;
+    const requestFrame = (function () {
+        const raf = w.requestAnimationFrame || w.mozRequestAnimationFrame || w.webkitRequestAnimationFrame || function (fn) { return w.setTimeout(fn, 66); };
+        return function (fn) { return raf(fn); };
+    })();
+    const cancelFrame = (function () {
+        const cancel = w.cancelAnimationFrame || w.mozCancelAnimationFrame || w.webkitCancelAnimationFrame || w.clearTimeout;
+        return function (id) { return cancel(id); };
+    })();
+    function resizeListener(evt) {
+        let target = evt.target;
+        if (target.__resizeRAF__) cancelFrame(target.__resizeRAF__);
+        target.__resizeRAF__ = requestFrame(function () {
+            const trigger = target.__resizeTrigger__;
+            each(trigger.__resizeListeners__, function (_, fn) {
+                fn.call(trigger);
+            });
+        });
+    }
+    function objectLoad() {
+        this.contentDocument.defaultView.__resizeTrigger__ = this.__resizeElement__;
+        this.contentDocument.defaultView.addEventListener('resize', resizeListener);
+    }
+
+    w.addResizeEvent = function (element, fn) {
+        if (!element.__resizeListeners__) {
+            element.__resizeListeners__ = [];
+            //}
+            //if (!element.__resizeListeners__) {
+            if (attachEvent) {
+                element.__resizeTrigger__ = element;
+                element.attachEvent('onresize', resizeListener);
+            } else {
+                let obj = element.__resizeTrigger__ = document.createElement('object');
+                setStyle(obj, { position: 'absolute', display: 'block', top: 0, left: 0, height: '100%', width: '100%', overflow: 'hidden', pointerEvents: 'none', zIndex: -1 });
+                obj.__resizeElement__ = element;
+                obj.onload = objectLoad;
+                obj.type = 'text/html'; 
+                obj.data = 'about:blank';
+                element.appendChild(obj);
+            }
+        }
+        element.__resizeListeners__.push(fn);
+    };
+    w.removeResizeEvent = function (element, fn) {
+        element.__resizeListeners__.splice(element.__resizeListeners__.indexOf(fn), 1);
+        if (!element.__resizeListeners__.length) {
+            if (attachEvent) element.detachEvent('onresize', resizeListener);
+            else {
+                element.__resizeTrigger__.contentDocument.defaultView.removeEventListener('resize', resizeListener);
+                element.__resizeTrigger__ = !element.removeChild(element.__resizeTrigger__);
+            }
+        }
+    }
+})(window);
+
 const applyCSS = (function () {
     const prefix = getVendorPrefix(); // function, that detects prefix using UA string
 
@@ -191,16 +250,10 @@ Ajax.send = function (options, data) { // options - object options || function c
                     <div>Wind speed: ${day.windspeed}</div>
                     <img src="img/weather/${day.icon}.png" alt="Weather is ${day.icon}">`;
                 resultBox.appendChild(tpl);
-            });
-
-            const params = {
-                prefix: 'weather',
-                countPanesInSlide: 4
-            }
-            Slider.init(resultBox, params);
+            }); 
         }
-    }
-    Ajax.send(options, data);
+    } 
+    //Ajax.send(options, data);
 
     var Slider = {};
     Slider.preventFastClicks = false;
@@ -232,9 +285,9 @@ Ajax.send = function (options, data) { // options - object options || function c
         let startPaneNode = document.querySelector('.' + options.prefix + '__pane-visible-position0'); // start process from
         Slider.slide(startPaneNode, -options.countPanesInSlide, Slider.nextPane);
     }
-    Slider.prevSlide = function (evt) {
+    Slider.prevSlide = function (evt) { 
         const box = Slider.get(evt.target);
-        let options = Slider.options(box);
+        let options = Slider.options(box); 
         let startPaneNode = document.querySelector('.' + options.prefix + '__pane-visible-position' + (options.countPanesInSlide - 1)); // start process from 
         Slider.slide(startPaneNode, options.countPanesInSlide * 2 - 1, Slider.prevPane);
     }
@@ -244,8 +297,8 @@ Ajax.send = function (options, data) { // options - object options || function c
 
         const box = Slider.get(startPaneNode);
         let options = Slider.options(box);
-        console.log( options );
-        let stylesObject = { display: 'none', transition: 'none', transform: 'translateX(0)' };
+        console.log(options);
+        let stylesObject = { display: 'none', transition: 'none', transform: 'translateX(0)', zIndex: 0 };
         const countSlides = 3; // 3 - previous, current, next slides
         const totalProcessed = options.countPanesInSlide * countSlides;
         const panesCurrent = document.querySelectorAll('.' + options.prefix + '__pane-translated');
@@ -264,10 +317,10 @@ Ajax.send = function (options, data) { // options - object options || function c
 
         for (let i = 0; i < totalProcessed; i++) {
             if (startTranslateXvalue >= 0 && startTranslateXvalue < options.countPanesInSlide) {
-                pane.classList.add(options.prefix + '__pane-visible-position' + startTranslateXvalue);
-            }
-
-            stylesObject = { display: 'block', transition: 'transform 1s', transform: 'translateX(' + (startTranslateXvalue * 100) + '%)' };
+                pane.classList.add(options.prefix + '__pane-visible-position' + startTranslateXvalue); 
+            } 
+            
+            stylesObject = { display: 'block', zIndex: 1, transition: 'transform 1s', transform: 'translateX(' + (startTranslateXvalue * 100) + '%)' };
             setStyle(pane, stylesObject);
             pane.classList.add(options.prefix + '__pane-translated');
             pane = handler(pane, options);
@@ -277,8 +330,7 @@ Ajax.send = function (options, data) { // options - object options || function c
 
         setTimeout(() => { Slider.preventFastClicks = false; }, 500);
     }
-    Slider.init = function (box, options) {
-        console.log( box );
+    Slider.init = function (box, options) { 
         if (isInited(box)) return;
 
         options.prefix = options.prefix || 'slider-' + (+new Date());
@@ -288,17 +340,18 @@ Ajax.send = function (options, data) { // options - object options || function c
         box.classList.add(options.prefix + '__slider-box');
         box.classList.add('__slider__');
 
-        const childs =  [...box.children];
+        const childs = [...box.children];
         const childsLength = childs.length;
-        childs.forEach((element, key)=> {
+        childs.forEach((element, key) => {
             element.classList.add(options.prefix + '__slider-pane');
-            if(key < options.countPanesInSlide){
+            if (key < options.countPanesInSlide) {
                 className = options.prefix + '__pane-visible-position' + key;
                 element.classList.add(className);
             }
         });
-        Slider.nextSlide({target: box});
-        Slider.prevSlide({target: box});
+        Slider.nextSlide({ target: box });
+        Slider.preventFastClicks = false;
+        Slider.prevSlide({ target: box });
 
         Slider.preventFastClicks = false;
         const sliderBtnLeft = document.querySelector('.' + options.prefix + '__arrow_left');
@@ -309,4 +362,19 @@ Ajax.send = function (options, data) { // options - object options || function c
         console.log(Slider.options(box));
     };
 
+    const resultBox = document.querySelector('.weather__fetch-result-box');
+    const countPanesInSlide = function () {
+        const screenWidth = clientWidth();
+        return screenWidth > 992 ? 5 : (screenWidth > 768 ? 4 : (screenWidth > 480 ? 3 : 2));
+    }
+    const params = {
+        prefix: 'weather',
+        countPanesInSlide: countPanesInSlide(),
+        onResize: function(){
+            const options = Slider.options(resultBox); 
+            options.countPanesInSlide = countPanesInSlide(); 
+            Slider.options(resultBox, options);
+        }
+    }
+    Slider.init(resultBox, params);
 })(); 
