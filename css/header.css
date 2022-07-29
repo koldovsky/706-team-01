@@ -1,18 +1,18 @@
 .header {
-    background: url(../../img/header/background-header-to767px.png) no-repeat 91.56% 51.56%;
+    background: url(../img/header/background-header-to767px.png) no-repeat 91.56% 51.56%;
     background-size: cover;
     color: var(--text-color-header);
 }
 
 @media (min-width: 768px) {
     .header {
-        background-image: url(../../img/header/background-header-from768px.png);
+        background-image: url(../img/header/background-header-from768px.png);
     }
 }
 
 @media (min-width: 1200px) {
     .header {
-        background-image: url(../../img/header/background-header-from1200px.png);
+        background-image: url(../img/header/background-header-from1200px.png);
     }
 }
 

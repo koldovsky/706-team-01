@@ -1,7 +1,7 @@
 .tour-itinerary {
     padding-top: 90px;
     padding-bottom: 90px;
-    background: url(../../img/tour-itinerary/tour-itinerary-background.png) 48.13% 50% / cover no-repeat;
+    background: url(../img/tour-itinerary/tour-itinerary-background.png) 48.13% 50% / cover no-repeat;
 }
 
 .tour-itinerary__inner {
@@ -64,15 +64,15 @@
 }
 
 .tour-itinerary__icon_official-license:before {
-    background-image: url(../../img/tour-itinerary/tour-itinerary__official-license.svg);
+    background-image: url(../img/tour-itinerary/tour-itinerary__official-license.svg);
 }
 
 .tour-itinerary__icon_professional-guide:before {
-    background-image: url(../../img/tour-itinerary/tour-itinerary__professional-guide.svg);
+    background-image: url(../img/tour-itinerary/tour-itinerary__professional-guide.svg);
 }
 
 .tour-itinerary__icon_satisfaction:before {
-    background-image: url(../../img/tour-itinerary/tour-itinerary__satisfaction.svg);
+    background-image: url(../img/tour-itinerary/tour-itinerary__satisfaction.svg);
 }
 
 @media screen and (min-width: 768px) {
