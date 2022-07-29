@@ -270,31 +270,37 @@ Ajax.send = function (options, data) { // options - object options || function c
         get(elem) {
             return elem.closest(".__slider__");
         }
+        
         getCountPanesInSlide() {
             const screenWidth = clientWidth();
             return screenWidth > 992 ? 5 : (screenWidth > 768 ? 4 : (screenWidth > 480 ? 3 : 2));
         }
+
         nextPane(pane, options) {
             return nextSibling(pane) || pane.parentNode.querySelector('.' + options.prefix + '__slider-pane');
         }
+
         prevPane(pane, options) {
             const prev = prevSibling(pane);
             if (prev) return prev;
             const panes = pane.parentNode.querySelectorAll('.' + options.prefix + '__slider-pane');
             return panes[panes.length - 1];
         }
+
         nextSlide(evt) {
             const box = Slider.get(evt.target);
             let options = Slider.options(box);
             let startPaneNode = document.querySelector('.' + options.prefix + '__pane-visible-position0'); // start process from
             Slider.slide(startPaneNode, -options.countPanesInSlide, Slider.nextPane);
         }
+
         prevSlide(evt) {
             const box = Slider.get(evt.target);
             let options = Slider.options(box);
             let startPaneNode = document.querySelector('.' + options.prefix + '__pane-visible-position' + (options.countPanesInSlide - 1)); // start process from 
             Slider.slide(startPaneNode, options.countPanesInSlide * 2 - 1, Slider.prevPane);
         }
+
         slide(startPaneNode, startTranslateXvalue, handler) {
             if (Slider.preventFastClicks) return;
             Slider.preventFastClicks = true;
@@ -334,6 +340,7 @@ Ajax.send = function (options, data) { // options - object options || function c
 
             setTimeout(() => { Slider.preventFastClicks = false; }, 500);
         }
+
         init(box, options) {
             if (isInitialized(box)) return;
 
@@ -364,7 +371,7 @@ Ajax.send = function (options, data) { // options - object options || function c
             sliderBtnLeft.addEventListener('click', Slider.prevSlide);
 
             console.log(Slider.options(box));
-        };
+        }
     };
 
     const resultBox = document.querySelector('.weather__fetch-result-box');
