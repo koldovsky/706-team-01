@@ -87,13 +87,13 @@
 
 @media (min-width: 768px) {
     .contacts {
-        background-image: url(../../img/contacts/background-contacts-from768.jpeg);
+        background-image: url(../img/contacts/background-contacts-from768.jpeg);
     }
 }
 
 @media (min-width: 1200px) {
     .contacts {
-        background: url(../../img/contacts/background-contacts-from1200.jpeg) no-repeat 50.94% 19.66%;
+        background: url(../img/contacts/background-contacts-from1200.jpeg) no-repeat 50.94% 19.66%;
     }
 }
 
