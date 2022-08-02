@@ -84,13 +84,18 @@ h3 {
 
 .faq-accordion__wrapper-text {
     color: var(--text-accordion-color);
-    display: none;
     font-size: 14px;
+    opacity: 0;
     padding-top: 20px;
+    position: absolute;
+    transition: opacity 0.8s ease-in-out;
+    visibility: hidden; 
 }
 
 .faq-accordion__wrapper.active .faq-accordion__wrapper-text {
-    display: block;
+    opacity: 1;
+    position: relative;
+    visibility: visible;
 }
 
 .faq-accordion__wrapper.active .faq-accordion__wrapper-title__plus::before {
