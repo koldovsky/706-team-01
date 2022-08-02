@@ -133,7 +133,8 @@
 .weather__container {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
-    height: 200px;
+    height: 116px;
+    margin: 40px 0;
     justify-items: center;
     align-items: center;
 }
@@ -183,13 +184,15 @@
 }
 
 .weather__container {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .weather__slider-pane>div:first-child {
     font-size: 15px;
     font-weight: bold;
 } 
+
+.weather__slider-container,
 .weather__fetch-result-box {
     display: flex;
     overflow: hidden;
@@ -209,6 +212,7 @@
     left: 0;
     top: 0;
     background: #fff;
+    transition: transform 1s;
 } 
 
 @media screen and (min-width: 480px) {
