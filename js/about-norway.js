@@ -13,7 +13,7 @@ function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
-function clientWidth() { 
+function clientWidth() {
     return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
 function clientHeight() {
@@ -65,7 +65,7 @@ function getVendorPrefix() {
         if (target.__resizeRAF__) cancelFrame(target.__resizeRAF__);
         target.__resizeRAF__ = requestFrame(function () {
             const trigger = target.__resizeTrigger__;
-            trigger.__resizeListeners__.forEach(function (fn) { 
+            trigger.__resizeListeners__.forEach(function (fn) {
                 fn.call(trigger);
             });
         });
@@ -293,28 +293,35 @@ Ajax.send = function (options, data) { // options - object options || function c
             const params = {
                 prefix: 'weather',
                 countPanesInSlide: countPanesInSlide(),
-                onResize: function () { 
-                    this.options({countPanesInSlide: countPanesInSlide()});
+                onResize: function () {
+                    const options = this.options();
+                    const newCountPanesInSlide = countPanesInSlide();
+
+                    if (newCountPanesInSlide !== options.countPanesInSlide) {
+                        console.log(options);
+                        this.options({ countPanesInSlide: newCountPanesInSlide });
+                        this.init(options);
+                    }
                 }
             }
-        
+
             new Slider(resultBox, params);
         }
     }
-    Ajax.send(options, data); 
+    Ajax.send(options, data);
 
     class Slider {
         constructor(box, options) {
-            if (!Slider._instance) Slider._instance = this; 
+            if (!Slider._instance) Slider._instance = this;
             this.container = box;
             this.preventFastClicks = false;
             this.defaultOptions = {
                 countPanesInSlide: 1,
             }
             options.prefix = options.prefix || 'slider-' + (+new Date());
-
             this.options(options);
-            this.init(box, options);
+            this.init(options);
+
             return Slider._instance;
         }
 
@@ -334,24 +341,25 @@ Ajax.send = function (options, data) { // options - object options || function c
             return panes[panes.length - 1];
         }
 
-        nextSlide() { 
-            let options = this.options();
+        nextSlide() {
+            const options = this.options();
             const className = '.' + options.prefix + '__pane-visible-position0';
             let startPaneNode = document.querySelector(className); // start process from 
             this.slide(startPaneNode, -options.countPanesInSlide, this.nextPane);
         }
 
         prevSlide() {
-            let options = this.options();
+            const options = this.options();
             const className = '.' + options.prefix + '__pane-visible-position' + (options.countPanesInSlide - 1);
             let startPaneNode = document.querySelector(className); // start process from 
             this.slide(startPaneNode, options.countPanesInSlide * 2 - 1, this.prevPane);
         }
+
         resetStyles() {
-            let stylesObject = { display: 'none', transition: 'none', transform: 'translateX(0)', zIndex: 0 }; 
+            let stylesObject = { display: 'none', transition: 'none', transform: 'translateX(0)', zIndex: 0 };
             const childs = [...this.container.children];
-            childs.forEach((element) => {
-                setStyle(element, stylesObject);
+            childs.forEach((pane) => {
+                setStyle(pane, stylesObject);
             });
             return stylesObject;
         }
@@ -361,7 +369,7 @@ Ajax.send = function (options, data) { // options - object options || function c
             this.preventFastClicks = true;
             setTimeout(() => { this.preventFastClicks = false; }, 500);
 
-            let options = this.options();
+            const options = this.options();
             const countPanesInSlide = options.countPanesInSlide;
             const countSlides = 3; // 3 - previous, current, next slides
             const totalProcessed = countPanesInSlide * countSlides;
@@ -369,9 +377,14 @@ Ajax.send = function (options, data) { // options - object options || function c
             let pane = startPaneNode; // start process from 
             let stylesObject = this.resetStyles();
 
-            for (let className, i = 0; i < countPanesInSlide; i++) {
-                className = options.prefix + '__pane-visible-position' + i;
-                document.querySelector('.' + className).classList.remove(className);
+            for (let i = 0; i < totalProcessed; i++) {
+                let className = options.prefix + '__pane-visible-position' + i;
+                let element = document.querySelector('.' + className);
+                if (!element) {
+                    break;
+                } else {
+                    element.classList.remove(className);
+                }
             }
 
             for (let i = 0; i < totalProcessed; i++) {
@@ -383,7 +396,7 @@ Ajax.send = function (options, data) { // options - object options || function c
                     stylesObject.zIndex = 2;
                 }
 
-                setStyle(pane, stylesObject); 
+                setStyle(pane, stylesObject);
                 pane = handler(pane, options);
 
                 startTranslateXvalue = startTranslateXvalue + direction;
@@ -395,30 +408,34 @@ Ajax.send = function (options, data) { // options - object options || function c
             const sliderBtnRight = document.querySelector('.' + options.prefix + '__arrow_right');
             sliderBtnRight.addEventListener('click', this.nextSlide.bind(this));
             sliderBtnLeft.addEventListener('click', this.prevSlide.bind(this));
-            if(options.onResize){ 
-                addResizeEvent(this.container.parentNode, options.onResize.bind(this)); 
+            if (options.onResize) {
+                addResizeEvent(this.container.parentNode, options.onResize.bind(this));
             }
         }
 
-        init(box, options) {
+        init(options) {
+            const box = this.container;
             box.classList.add(options.prefix + '__slider-box');
             box.classList.add('__slider__');
 
+            this.resetStyles();
+
             const childs = [...box.children];
-            childs.forEach((element, key) => {
-                element.classList.add(options.prefix + '__slider-pane');
+            childs.forEach((pane, key) => {
+                pane.className = '';
+                pane.classList.add(options.prefix + '__slider-pane');
                 if (key < options.countPanesInSlide) {
                     let className = options.prefix + '__pane-visible-position' + key;
-                    element.classList.add(className);
+                    pane.classList.add(className);
                 }
             });
 
-            this.nextSlide({ target: box });
+            this.nextSlide();
             this.preventFastClicks = false;
-            this.prevSlide({ target: box });
+            this.prevSlide();
 
             this.preventFastClicks = false;
-            this.addEventListeners(options) 
+            this.addEventListeners(options)
         }
-    }; 
+    };
 })(); 
