@@ -215,7 +215,7 @@
     transition: transform 1s;
 } 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 560px) {
     .weather__slider-pane { 
         min-width: 33.333%;
         flex-basis: 33.333%;
