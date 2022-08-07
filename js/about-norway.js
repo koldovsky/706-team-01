@@ -288,7 +288,7 @@ Ajax.send = function (options, data) { // options - object options || function c
             //const resultBox = document.querySelector('.weather__fetch-result-box');
             const countPanesInSlide = function () {
                 const screenWidth = clientWidth();
-                return screenWidth > 991 ? 5 : (screenWidth > 767 ? 4 : (screenWidth > 479 ? 3 : 2));
+                return screenWidth > 991 ? 5 : (screenWidth > 767 ? 4 : (screenWidth > 559 ? 3 : 2));
             }
             const params = {
                 prefix: 'weather',
