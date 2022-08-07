@@ -209,11 +209,11 @@ div[class="places__city-details-container"] img{
     background: var(--button-color);
     text-decoration: none;
     padding: 14px 20px;
+    transition: 1s;
 }
 
 .places__city-book-button:hover{
-    background: var(--bs-accordion-bg);
-    transition: 1s;
+    background: var(--header-button-hover);
     color: var(--text-white-color);
 }
 
