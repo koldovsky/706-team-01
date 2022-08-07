@@ -37,16 +37,18 @@
     height: auto;
     z-index: auto;
 }
-.stunning-spots-carousel__button-container {
+.stunning-spots-carousel__button-container-prev {
+    padding-left: auto;
+    position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgb(131, 117, 117);
+    background-color: rgb(255, 255, 255, 0.45);
     z-index: 1;
     text-align: center;
 }
 .stunning-spots-carousel__btn-prev {
-    width: 30px;
+    padding-left: auto;
     height: 30px;
     border-radius: 50%;
     text-align: center;
@@ -54,6 +56,16 @@
     color: #fff;
     border: none;
     background: none;
+}
+.stunning-spots-carousel__button-container-next {
+    right: 365px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.45);
+    z-index: 1;
+    text-align: center;
 }
 .stunning-spots-carousel__btn-next {
     width: 30px;
@@ -70,6 +82,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 20px;
 }
 .slider-dots {
     cursor: pointer;
@@ -111,15 +124,6 @@
         opacity: 1
     }
 }
-/* .carousel-photos__slides {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1;
-    grid-gap: 20px;
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
-} */
 .quote__content {
     color: var(--plus-color);
     font-family: "Playfair Display", serif;
@@ -139,19 +143,19 @@
     padding-bottom: 20px;
 }
 .stunning-spots-slide {
-    min-width: 300px;
-    max-height: 300px;
-
+    min-width: 750px;
+    min-height: 750px;
+    max-width: 100%;
+    height: 100%;
 }
 .image-slide {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 750px;
+    min-height: 750px;
     display: block;
     position: relative;
-    max-width: 100%;
 }
 .quote {
     display: block;
@@ -214,6 +218,13 @@
         width: 100%;
         position: relative;
     }
+    .stunning-spots-slide {
+        width: 100%;
+        max-height: 250px;
+    }
+    .image-slide {
+        min-height:250px;
+    }
     .quote__icon-path {
         width: 50px;
         height: 50px;
@@ -223,11 +234,21 @@
         line-height: 33.84px;
     }
 }
+
 @media (min-width: 768px) {
     .carousel-photos__slides {
         grid-template-columns: 1fr 1fr;
         width: 100%;
         position: relative;
+    }
+    .stunning-spots-slide {
+        min-width: 350px;
+        min-height: 350px;
+        max-width: 100%;
+    }
+    .image-slide {
+        min-width: 350px;
+        min-height: 350px;
     }
     .quote__icon-path {
         width: 70px;
@@ -243,6 +264,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
         position: relative;
+    }
+    .stunning-spots-slide {
+       width: 100%;
+        min-height: 300px;
+    }
+    .image-slide {
+        /* min-width: 300px; */
+        min-height: 300px;
     }
     .quote__icon-path {
         width: 70px;
