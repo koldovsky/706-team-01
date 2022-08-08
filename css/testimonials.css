@@ -20,6 +20,15 @@
     align-items: center;
 }
 
+.slider-wrapper {
+    overflow: hidden;
+}
+
+.testimonials-carousel__slides__container {
+    display: flex;
+    transition: all ease 1s;
+}
+
 .testimonials-icons {
     width: 80px;
     height: 80px;
