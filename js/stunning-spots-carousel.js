@@ -54,8 +54,8 @@
     
     function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName("stunning-spots-slide");
-        var dots = document.getElementsByClassName("slider-dots");
+        var slides = document.getElementsByClassName(".stunning-spots-slide");
+        var dots = document.getElementsByClassName(".slider-dots");
         if (n > slides.length) {
           slideIndex = 1
         }
