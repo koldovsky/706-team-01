@@ -82,13 +82,13 @@
 .testimonials-carousel__btn-prev {
     border: none;
     background: none;
-    margin-right: 40px;
+    margin-right: 5px;
 }
 
 .testimonials-carousel__btn-next {
     border: none;
     background: none;
-    margin-left: 40px;
+    margin-left: 5px;
 }
 
 .testimonials-carousel__circles {
@@ -109,10 +109,6 @@
 .circle:hover {
     background-color: rgb(0, 0, 0);
 }
-
-/*.circle:focus {
-    background-color: rgb(92, 92, 92);
-}*/
 
 .activee {
     background-color: rgb(92, 92, 92);
