@@ -45,3 +45,11 @@ const activeDot = n => {
     }
     dots[n].classList.add('activee');
 }
+
+dots.forEach((item, indexDot) => {
+    item.addEventListener('click', () => {
+        count = indexDot;
+        rollSlider();
+        activeDot(count);
+    })
+})
