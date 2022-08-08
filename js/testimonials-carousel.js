@@ -41,7 +41,7 @@ function rollSlider() {
 
 const activeDot = n => {
     for(circle of dots) {
-        circle.classList.remove('active');
+        circle.classList.remove('activee');
     }
-    dots[n].classList.add('active');
+    dots[n].classList.add('activee');
 }
