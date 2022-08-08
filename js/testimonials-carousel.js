@@ -2,9 +2,9 @@ const slides = document.querySelectorAll('.slider-wrapper .testimonials-carousel
 const sliderLine = document.querySelector('.testimonials-carousel__slides__container');
 let count =  0;
 let width;
+const dots = document.querySelectorAll('.circle')
 
 function  init() {
-    console.log('resize');
     width = document.querySelector('.slider-wrapper').offsetWidth;
     sliderLine.style.width = width*slides.length + 'px';
     slides.forEach(item => {
@@ -23,6 +23,7 @@ document.querySelector('.testimonials-carousel__btn-prev').addEventListener('cli
         count = slides.length - 1;
     }
     rollSlider();
+    activeDot(count);
 });
 
 document.querySelector('.testimonials-carousel__btn-next').addEventListener('click', function(){
@@ -31,8 +32,16 @@ document.querySelector('.testimonials-carousel__btn-next').addEventListener('cli
         count = 0;
     }
     rollSlider();
+    activeDot(count);
 });
 
 function rollSlider() {
     sliderLine.style.transform = 'translate(-'+count*width+'px)';
+};
+
+const activeDot = n => {
+    for(circle of dots) {
+        circle.classList.remove('active');
+    }
+    dots[n].classList.add('active');
 }

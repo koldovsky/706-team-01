@@ -110,7 +110,11 @@
     background-color: rgb(0, 0, 0);
 }
 
-.circle:focus {
+/*.circle:focus {
+    background-color: rgb(92, 92, 92);
+}*/
+
+.active {
     background-color: rgb(92, 92, 92);
 }
 
