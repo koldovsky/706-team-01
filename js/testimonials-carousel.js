@@ -1,3 +1,4 @@
+(function () {
 const slides = document.querySelectorAll('.slider-wrapper .testimonials-carousel__slides__container .testimonials-slide');
 const sliderLine = document.querySelector('.testimonials-carousel__slides__container');
 let count =  0;
@@ -44,7 +45,7 @@ const activeDot = n => {
         circle.classList.remove('activee');
     }
     dots[n].classList.add('activee');
-}
+};
 
 dots.forEach((item, indexDot) => {
     item.addEventListener('click', () => {
@@ -53,3 +54,5 @@ dots.forEach((item, indexDot) => {
         activeDot(count);
     })
 })
+
+})();
