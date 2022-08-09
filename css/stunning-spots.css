@@ -58,7 +58,8 @@
     background: none;
 }
 .stunning-spots-carousel__button-container-next {
-    right: 365px;
+    margin-right: 40px;
+    right: 0;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -68,6 +69,7 @@
     text-align: center;
 }
 .stunning-spots-carousel__btn-next {
+    right: 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;

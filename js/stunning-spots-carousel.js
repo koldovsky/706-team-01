@@ -44,7 +44,7 @@
         renderCarousel();
     }
 
-    setInterval(next, 5000);
+    setInterval(next, 3000);
 
     const prevButton = document.querySelector('.stunning-spots-carousel__btn-prev');
     prevButton.addEventListener('click', prev);
