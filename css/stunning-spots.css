@@ -38,7 +38,7 @@
     z-index: auto;
 }
 .stunning-spots-carousel__button-container-prev {
-    padding-left: auto;
+    padding-left: 0;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -48,7 +48,7 @@
     text-align: center;
 }
 .stunning-spots-carousel__btn-prev {
-    padding-left: auto;
+    padding-left: 0;
     height: 30px;
     border-radius: 50%;
     text-align: center;
