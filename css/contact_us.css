@@ -3,6 +3,7 @@
 
 :root 
 {
+   display: flex;
   --main__text-color: rgb(80, 80, 80); 
   --main__border-color: #ccc; 
   --description-text-light: rgba(255, 255, 255, 0.6); 
@@ -29,11 +30,13 @@
 .contact_us-span
 {
   color: rgb(238,46,20);
+  display: flex;
 }
 
 .contact_us_info{
   color: rgba(255,255,255,0.6);
   font-family: Roboto, sans-serif;
+  display: flex;
 }
 
 
